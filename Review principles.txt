@@ -1,0 +1,388 @@
+````markdown
+# Multi-Agent LLM Orchestrator（后端）实现文档（不含订阅实现细节）
+
+> 目标：后端实现“多个 LLM 在同一 session 内互相沟通、按规则迭代生成 Plan 版本、并对部分 API Agent 做强约束”。  
+> 说明：**订阅主脑的鉴权/调用实现不在本文范围**；但保留其模块接口（Adapter），你自行接入。
+
+---
+
+## 1. 术语与对象（必须统一）
+
+### 1.1 Session（会话）
+- 一个用户任务对应一个 `session_id`
+- Session 内包含：消息流（messages）、Plan 版本链（plan_versions）、运行记录（runs）、调用账本（provider_calls）
+
+### 1.2 Agent（智能体）
+- 每个 Agent 是一个“角色 + 适配器 + 策略”组合
+- 例：A=主脑（订阅），B=受限审稿（便宜API），C=校验器（便宜API/本地）
+
+### 1.3 Envelope（消息信封）
+后端内部传递的统一消息结构：  
+- 用于：存储、路由、回放、审计、调试
+- 用于输入模型时，可映射到各厂商的 message 格式
+
+---
+
+## 2. 总体架构（3 个模块）
+
+### 模块 A：Primary LLM Adapter（订阅主脑适配器，**仅保留接口**）
+> 你自己实现：鉴权、调用、token 统计等。
+
+### 模块 B：API LLM Adapters（受限 API 适配器集合）
+- 负责调用：DeepSeek/其他便宜API/本地模型
+- 必须支持：强约束（schema、长度、次数、上下文裁剪）
+
+### 模块 C：Orchestrator（编排器）
+- 负责：轮次状态机、消息路由、输出校验、Plan 版本生成、熔断/重试、日志与账本
+
+---
+
+## 3. Adapter 接口规范（关键）
+
+### 3.1 统一接口（所有 LLM 都必须实现）
+**输入：** `LLMRequest`  
+**输出：** `LLMResponse`
+
+```ts
+// llm/types.ts
+export type AgentId = string;
+
+export interface LLMRequest {
+  session_id: string;
+  agent_id: AgentId;
+
+  // 上下文：由 Orchestrator 构造（裁剪后）
+  messages: Array<{ role: "system" | "user" | "assistant"; content: string }>;
+
+  // 约束：由 Orchestrator 强制
+  constraints: {
+    max_output_chars?: number;        // 强制截断（接收端）
+    max_turn_seconds?: number;        // 超时
+    output_format?: "text" | "json";  // 期待格式
+    json_schema?: object;             // 期待 JSON schema（强校验）
+    stop?: string[];                  // 可选：停用词（如果提供商支持）
+  };
+
+  // 提供商参数（软约束）：温度、top_p、max_tokens 等
+  model_params?: Record<string, any>;
+}
+
+export interface LLMResponse {
+  ok: boolean;
+  content_text?: string;             // text 输出
+  content_json?: any;                // json 输出（解析后）
+  raw_text: string;                  // 原始字符串（永远保留）
+  usage?: { input_tokens?: number; output_tokens?: number; cost_usd?: number };
+  latency_ms: number;
+  error?: { code: string; message: string; retryable: boolean };
+}
+````
+
+### 3.2 Adapter 行为硬要求
+
+* **不得**在 Adapter 里做“业务编排”；编排只在 Orchestrator
+* Adapter 只做：调用外部模型、返回原始输出、尽可能返回 usage
+* **解析 JSON**可在 Adapter 或 Orchestrator 做，但最终必须由 Orchestrator 进行 schema 校验
+
+---
+
+## 4. Envelope（消息信封）与存储模型
+
+### 4.1 Envelope 结构（建议）
+
+```json
+{
+  "message_id": "msg_...",
+  "session_id": "sess_...",
+  "run_id": "run_...",
+  "agent_id": "A|B|C",
+  "role": "system|user|assistant",
+  "content": "string (可为JSON字符串)",
+  "created_at": "2026-03-03T12:34:56Z",
+  "refs": ["plan:v1", "msg:msg_..."],
+  "constraints_snapshot": {
+    "max_output_chars": 1200,
+    "output_format": "json"
+  },
+  "provider_call_id": "call_..."
+}
+```
+
+### 4.2 SQLite（最小可跑）表设计
+
+文件：`data/orchestrator.sqlite`
+
+* `sessions(session_id, title, created_at)`
+* `messages(message_id, session_id, run_id, agent_id, role, content, created_at, refs_json, provider_call_id)`
+* `plan_versions(plan_id, session_id, version, plan_json, created_at, derived_from_plan_id)`
+* `runs(run_id, session_id, status, round, started_at, ended_at, stop_reason)`
+* `provider_calls(call_id, session_id, run_id, agent_id, provider, model, request_json, response_json, usage_json, latency_ms, created_at)`
+
+> 额外：并行/生产环境可换 Postgres；队列可加 Redis（见第 9 节）。
+
+---
+
+## 5. Plan 版本（强结构，禁止散文）
+
+### 5.1 Plan JSON Schema（建议固定字段）
+
+```json
+{
+  "goal": "string",
+  "inputs": [
+    { "name": "string", "type": "text|csv|pdf|url|other", "required": true, "notes": "string" }
+  ],
+  "steps": [
+    {
+      "id": "S1",
+      "action": "string",
+      "check": "string",
+      "artifacts": ["table|chart|code|note|other"],
+      "failure_modes": ["string"]
+    }
+  ],
+  "risks": ["string"],
+  "next_questions": ["string"]
+}
+```
+
+### 5.2 版本生成规则（由 Orchestrator 强制）
+
+* A 的输出若不是合法 schema：
+
+  * 先触发一次“自修复提示”（只给错误列表，要求重写 JSON）
+  * 仍失败：该轮判定失败（run 标记 `schema_fail`），不写入 plan_versions
+
+---
+
+## 6. 受限 API Agent（B/C）的硬约束策略（必须实现）
+
+### 6.1 B（Critic）输出 schema（固定 3 栏）
+
+```json
+{
+  "issues": ["string"],
+  "missing_info": ["string"],
+  "risks": ["string"]
+}
+```
+
+### 6.2 接收端强制流程（Orchestrator）
+
+1. **长度限制**：若 `raw_text.length > max_output_chars` → 截断并标记 `truncated=true`
+2. **JSON 解析**：解析失败 → retry 1 次（提供“必须输出 JSON”错误提示）
+3. **Schema 校验**：字段缺失/多余/类型不符 → retry 1 次（提供字段级错误）
+4. **仍失败**：丢弃该消息（写入 messages 但标记 `invalid_output=true`），run 继续或中止（配置项）
+
+> 这是“可控”的核心：不是靠模型自觉，而是靠接收端把输出当作不可信输入处理。
+
+---
+
+## 7. Orchestrator（编排器）设计
+
+### 7.1 状态机（Round-based）
+
+默认回路（可配置）：
+
+* Round 1: A(Builder) → 产出 `plan:v0`
+* Round 2: B(Critic, 受限) → 产出 `critic:v0`（issues/missing/risks）
+* Round 3: A(Builder) → 产出 `plan:v1`（必须逐条回应 critic）
+* Round 4: C(Verifier, 可选) → `verify`（schema_ok / contradictions）
+* Stop: 达到 `max_rounds` 或满足 `stop_conditions`
+
+### 7.2 Stop Conditions（建议）
+
+* `max_rounds`（默认 3 或 4）
+* `missing_info_count <= 2` 且 `every_step_has_check == true`
+* `verifier.schema_ok == true` 连续 1 次
+
+### 7.3 上下文裁剪（省钱 + 稳定）
+
+对每个 Agent 的 `input_policy`：
+
+* A：看 “用户任务 + 最新 Plan + 最新 Critic + 关键历史摘要”
+* B：只看 “最新 Plan”（避免被聊天噪音带偏）
+* C：只看 “最新 Plan”（校验）
+
+摘要策略（硬规则，不依赖模型）：
+
+* 永远保留：用户第一条任务消息、最新 plan_json、最新 critic_json
+* 其它历史只保留最近 N 条或按 token 预算裁剪
+
+---
+
+## 8. 对外 API（你的后端给任何前端/服务用）
+
+### 8.1 REST（管理类）
+
+* `POST /sessions` → 创建 session（返回 session_id）
+* `GET /sessions/:id` → session 元信息 + 最新 plan 版本
+* `GET /sessions/:id/messages` → 分页消息
+* `GET /sessions/:id/plans` → plan 版本链
+
+### 8.2 WebSocket（流式事件，推荐）
+
+* `WS /sessions/:id/events`
+
+事件类型（示例）：
+
+```json
+{ "type": "run_started", "run_id": "run_...", "round": 1 }
+{ "type": "agent_message", "agent_id": "A", "message_id": "msg_..." }
+{ "type": "plan_created", "version": 1, "plan_id": "plan_..." }
+{ "type": "run_stopped", "reason": "stop_condition_met" }
+```
+
+---
+
+## 9. 并发与队列（从单机到可扩展）
+
+### 9.1 最小实现（单进程队列）
+
+* 进程内 `async queue`：一个 session 同时只运行一个 run（避免交错写 plan）
+
+### 9.2 可扩展实现（Redis）
+
+* `run_queue`：待执行 run
+* `session_lock:{session_id}`：分布式锁，保证同一 session 单 run
+* `events_stream:{session_id}`：事件流（供前端订阅）
+
+---
+
+## 10. 目录结构（可直接开仓库）
+
+```
+orchestrator/
+  src/
+    adapters/
+      primary_subscription_adapter.ts   # 只保留接口/占位实现
+      api_adapter_deepseek.ts
+      api_adapter_generic.ts
+    orchestrator/
+      state_machine.ts
+      context_builder.ts
+      validators.ts
+      policies.ts
+    storage/
+      sqlite.ts
+      migrations/
+    api/
+      rest.ts
+      ws.ts
+    schemas/
+      plan.schema.json
+      critic.schema.json
+  data/
+    orchestrator.sqlite
+  config/
+    agents.yaml
+    runtime.yaml
+```
+
+---
+
+## 11. 配置文件（agents.yaml 示例）
+
+```yaml
+agents:
+  - id: "A"
+    role: "builder"
+    adapter: "primary_subscription"  # 你自己实现
+    input_policy:
+      include_user_task: true
+      include_latest_plan: true
+      include_latest_critic: true
+      include_history_messages: 6
+    output:
+      format: "json"
+      schema: "schemas/plan.schema.json"
+    params:
+      temperature: 0.4
+
+  - id: "B"
+    role: "critic"
+    adapter: "deepseek_api"
+    input_policy:
+      include_latest_plan: true
+      include_history_messages: 0
+    output:
+      format: "json"
+      schema: "schemas/critic.schema.json"
+    constraints:
+      max_output_chars: 1200
+      max_turn_seconds: 20
+    params:
+      temperature: 0.2
+
+runtime:
+  max_rounds: 3
+  retry_on_invalid_json: 1
+  retry_on_schema_fail: 1
+  stop_conditions:
+    missing_info_leq: 2
+    require_check_each_step: true
+```
+
+---
+
+## 12. MVP 实施顺序（只做“其他两块”，不碰订阅实现）
+
+### Step 1：把 Orchestrator + SQLite 跑起来
+
+* `POST /sessions` 创建 session
+* 写入 `sessions` 表
+* WebSocket 推送 events（先推 fake 事件也行）
+
+### Step 2：实现 B（受限 API）Adapter + 校验器
+
+* 调用任意便宜API（你提供 key）
+* 实现：JSON 解析、schema 校验、长度截断、重试一次
+
+### Step 3：实现状态机（Round 2 单独跑）
+
+* 给 Orchestrator 一个固定的 `plan:v0`（先写死 JSON 文件）
+* 只跑 B：输出 critic JSON → 存 messages/provider_calls
+
+### Step 4：接入 A（主脑 Adapter 占位）
+
+* A 的 adapter 先做 “mock”（返回固定 plan:v1）
+* 先验证：版本链、refs、stop condition、回放是否正确
+
+> 当你把 A 的真实订阅实现接进来，只替换 adapter，不动 orchestrator 的任何逻辑。
+
+---
+
+## 13. 失败处理（必须实现的四类）
+
+1. **提供商超时**：标记 provider_call retryable，按策略重试或跳过该 agent
+2. **输出非 JSON**：重试 1 次；仍失败则丢弃该轮输出
+3. **schema 不合格**：重试 1 次；仍失败则 run 终止或跳过（配置）
+4. **并发冲突**：session lock 拒绝同时启动第二个 run（返回 409）
+
+---
+
+## 14. 观测与审计（你要“可控互相沟通”必须可见）
+
+每次外部调用都写一条 `provider_calls`：
+
+* request_json（含 constraints、裁剪后的 messages）
+* response_json（含 raw_text、parsed_json、usage、latency）
+* 这能让你在 UI 里画出“每轮成本柱状图”（一个清晰可视化的对象）
+
+---
+
+## 15. 你最终会得到什么（验收）
+
+* 一个后端进程（Node/Python均可），监听：
+
+  * REST 端口（例如 8080）
+  * WebSocket 端口（同域 /ws）
+* 一个 SQLite 文件：`data/orchestrator.sqlite`
+* 一条 session 内，消息表里能看到 A/B 的消息按 round 归档
+* plan_versions 里有 v0/v1/v2 版本链
+* provider_calls 里有每次模型调用的 usage 与耗时记录
+
+```
+
+如果你要我把上面文档进一步“落成可运行骨架代码”，可以直接指定你要用 **Node(Typescript)** 还是 **Python(FastAPI)**；我会按这个目录结构给出最小可跑的项目骨架（含 SQLite migration、WebSocket events、schema 校验、状态机）。
+```

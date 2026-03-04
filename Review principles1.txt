@@ -1,0 +1,1003 @@
+- [View **PDF**](https://www.sciencedirect.com/science/article/pii/S0022053125001826/pdfft?md5=05c1c09da3cca8fd35294674c36d7ec9&pid=1-s2.0-S0022053125001826-main.pdf)
+
+[![Elsevier](https://www.sciencedirect.com/us-east-1/prod/0d9a89bf035810c5e67382f2165fe6895c318871/image/elsevier-non-solus.svg)](https://www.sciencedirect.com/journal/journal-of-economic-theory "Go to Journal of Economic Theory on ScienceDirect")
+
+## Journal of Economic Theory
+
+[Volume 232](https://www.sciencedirect.com/journal/journal-of-economic-theory/vol/232/suppl/C "Go to table of contents for this volume/issue"), March 2026, 106136
+
+## Coasian dynamics and endogenous learning
+
+[https://doi.org/10.1016/j.jet.2025.106136](https://doi.org/10.1016/j.jet.2025.106136 "Persistent link using digital object identifier") [Get rights and content](https://s100.copyright.com/AppDispatchServlet?publisherName=ELS&contentID=S0022053125001826&orderBeanReset=true)
+
+Under a Creative Commons [license](http://creativecommons.org/licenses/by/4.0/)
+
+Open access
+
+- [Next article in issue](https://www.sciencedirect.com/science/article/pii/S0022053125001772)
+
+## JEL classification
+
+D42
+
+D83
+
+## 1\. Introduction
+
+In this paper, we study pricing in a market where both a monopolistic seller and buyers learn product quality over time as buyers purchase the product. Our contribution to the literature is both technical and conceptual. The main novelty is combining endogenous learning with buyers’ ability to wait for more information. We show that this leads to inefficient delays in the Markov perfect equilibria of the game, which stands in contrast to results without endogenous learning.
+
+A central theme of the paper is how dynamic pricing affects information generation when buyers are forward-looking. Importantly, the monopolist’s selling decisions are guided by how well she internalizes the value of information. The greater the seller’s profits, the more willing she is to subsidize consumption today in order to generate information. But because the buyers can wait for both more information and potentially lower prices, the seller must leave them some surplus to entice them to purchase today. We show that this not only distorts the expected amount of sales but more surprisingly also causes delays in sales. Delays are inefficient because they only serve to reduce the buyers’ surplus and they never happen in the social optimum.
+
+In our model, a monopolist is selling a product of uncertain quality to a fixed mass of buyers who have unit demand and decide when to purchase. Buyers’ valuation for the product depends on their private type and on the unknown quality of the product. The monopolist faces a constant marginal cost. Except for uncertainty about the valuation, this is the classical durable goods setup. The novelty lies in modeling learning about product quality by assuming that a perfectly revealing signal (news) arrives according to a Poisson arrival rate that is proportional to the current rate of sales. The arrival rates of good and bad news may be different, including pure good news and pure bad news learning.
+
+Our main interest is in the stationary Markov perfect equilibria (MPE) in which the monopolist optimizes in every state. The payoff relevant state consists of the amount of sales and the belief that the quality is high. We first establish a version of the Coase conjecture for our model and then characterize equilibrium behaviour in the continuous time limit. We find two sources of inefficiency in MPE. First, the amount of sales is too small absent news. The monopolist sells until the marginal cost outweighs the value of consumption, but she does not take into account the social value of information generation through sales. Second, the monopolist may also find it necessary to delay sales. These delays are always inefficient.
+
+Delays arise because learning increases the buyers’ value of waiting so that the monopolist’s payoff may be negative if she sells too fast. Sequential rationality drives the final price down to the marginal cost. Hence, buyers understand that by waiting they get to buy at the marginal cost and, meanwhile, may receive decision relevant information. If sales take place very fast, this implies that the buyers’ willingness to pay early in the game is actually strictly below the marginal cost. Delaying sales allows the monopolist to diminish the buyers’ value of waiting by slowing down both the flow of information and the possible decrease in the price. Thus, the slower the sales, the higher is the buyers’ willingness to pay today and hence higher the price.
+
+Interestingly, delays occur when learning happens at least partially through bad news. An intuitive explanation for this result is that bad news provides decision relevant information immediately for a buyer who would otherwise purchase. Because bad news learning allows buyers to potentially avoid making the wrong decision, the monopolist has to offer buyers compensation for forgoing this option to wait for more information. In equilibrium, this compensation turns out to be so large that without delaying sales, and thus the flow of information, the monopolist would make negative profits.
+
+In addition to selling *faster*, we also show that the commitment monopolist may *sell more* than the equilibrium monopolist. This happens only when learning happens at least partially through good news because good news provides decision relevant information when the seller would otherwise stop selling. Under good news learning, the overall quantity sold in equilibrium is inefficiently low.
+
+## Related literature
+
+This paper contributes to the literature on social learning and experimentation and to the literature on durable goods and bargaining. The most related papers studying social learning are , and . All three papers look at situations where prices cannot adjust to facilitate experimentation. and study social learning from the point of view of a social planner who designs a recommendation system for the consumers. Both papers show that the planner’s solution generally exhibits regions of over-recommendation to induce consumers to experiment. analyze innovation adoption with homogeneous consumers and a fixed price and without an active seller. They show that because of informational free-riding, some consumers may choose to wait in the equilibrium. Our main contribution relative to this literature is to analyze how dynamic pricing interacts with the informational free-riding and how Coasian dynamics affect the monopolist’s ability to internalize this externality. In terms of results, delays and informational free-riding arise in our model only if consumers are heterogeneous.
+
+The solutions to the complete information version of our model are in line with the classic durable goods papers (see , , , and ). characterizes the commitment solution in the case when demand varies exogenously over time.
+
+The most related papers that consider sequentially rational seller under *exogenously* varying state are and . analyze a bargaining model with a stochastic arrival of an outside option, which creates incentives to delay trade. analyzes a similar bargaining model where the parties exogenously learn about the existence of the outside option. The models analyzed in these papers differ from the classical bargaining papers in two ways: first, there is a possibility that a dominant outside option arrives; second, as the value of the outside option is assumed to depend on the buyer’s type, valuations are interdependent. Without interdependency, all possible delays are efficient in both papers. This arises from the state dynamics being *exogenous*, and is contrast to inefficient delays in our paper under *endogenous* learning. Importantly, there is no informational externality and the seller may want to wait just in order to receive more information if learning is exogenous. We discuss the role of endogenous versus exogenous learning more in . In and , equilibria tend to feature inefficient delays when values are interdependent. We discuss interdependent values next.
+
+The observation that interdependent values create inefficient delays in bargaining dates back to , who demonstrates that there can be delays in a durable good monopoly under the monopolist’s learning-by-doing. Olsen also points out that learning-by-doing is equivalent to bargaining under interdependent values. analyze a related bargaining model with interdependent values. In , values are discrete and the buyer’s value is always above the seller’s value (‘gap case’), while in , values are linear and there is no gap. Because of these differences, the equilibrium structures differ qualitatively between the two papers. show that these differences disappear when the gap between the lowest buyer’s valuation and the seller’s cost goes to zero in . and analyze a similar lemons problem but with an exogenous flow of information about valuations. An important reason why delays arise in these papers is the asymmetric nature of information: the uninformed party wants to avoid paying above her valuation. Information in our model, in contrast, is symmetric. We discuss interdependent values/ learning-by-doing in more detail in .
+
+We use the envelope theorem of to solve the monopolist’s commitment solution. and use a similar approach in static contexts and () applies it to a dynamic setting. is the closest to our commitment solution as it solves for the seller-optimal static mechanism in bargaining under interdependent values.
+
+## 2\. Model
+
+### 2.1. Actions and payoffs
+
+A monopolistic seller (she) is selling a product of unknown quality to a mass of buyers over time. Time is discrete, $t∈{0,Δ,2Δ,⋯}$, with period length Δ. At the beginning of each period, the monopolist sets the price *p <sub>t</sub>*. Each buyer (he) chooses whether to purchase, has a unit demand and exits the market upon purchasing the product.
+
+Let *ω*  ∈ {1, 0} denote the quality of the product, where 1 denotes high quality and 0 low quality. Neither the seller nor the buyers observe *ω*, but they share a common belief: $Pr(ω=1)=xt$. Each buyer has a (private) type $θ∈[θ‾,θ¯]$ distributed according to *F*, which has a continuously differentiable density function *f*, bounded away from 0, and an increasing hazard rate. Buyer *i* ’s valuation for the product is *θ <sub>i</sub> ω*, which implies that his expected valuation equals *θ <sub>i</sub> x <sub>t</sub>*. All players are risk neutral. We normalize the value of the buyers’ outside option to zero and the mass of buyers to one.
+
+The monopolist faces a constant marginal cost of production, *c*  > 0. We assume the ‘no-gap’ case: *c*  >  *θ*, so that the seller never wants to sell to all buyers. We let *λ <sub>t</sub>* denote the rate of sales at time *t* so that the amount of sales in that period equals *λ <sub>t</sub>* Δ. Lastly, we assume that both the seller and the buyers discount the future with the same discount rate *r*  > 0. For the most part, our analysis focuses on the continuous time limit as the period length goes to zero, Δ → 0.
+
+### 2.2. Learning
+
+The seller and the buyers observe public signals (news) about the product quality over time as buyers purchase the product. We model this learning process with an exponential bandit similar to those analyzed by and by . Central to our model of learning is that signals arrive proportionally to the amount of sales, so that the more the monopolist sells the more she and the buyers learn. For tractability, we focus on signals that are *perfectly revealing*, meaning that a single signal is conclusive evidence that the product is either high or low quality.
+
+Suppose that the sales in period *t* equal *λ <sub>t</sub>* Δ. We can then describe the news process as follows. At the beginning of the next period, a perfectly revealing public signal about the product quality being *high* arrives with probability $1−e−ωδGλtΔ$ if the quality is high, where *δ <sub>G</sub>*  ≥ 0 denotes the arrival rate of the signal revealing high quality (good news) per a unit of sales. Similarly, a perfectly revealing signal about the quality being *low* arrives with probability $1−e−(1−ω)δBλtΔ$ if the quality is low, where *δ <sub>B</sub>*  ≥ 0 denotes the arrival rate of the signal revealing low quality (bad news).
+
+If no news arrives, market participants update their beliefs by using Bayes’ rule based on the arrival rates *δ <sub>G</sub>* and *δ <sub>B</sub>*. Given a prior *x* <sub>0</sub>, we can write the no-news posterior (belief) *x <sub>t</sub>* as $xt=x0e−δGQtx0e−δGQt+(1−x0)e−δBQt,$where $Qt=∑i=0tΔ−1λiΔΔ$ is the total amount of sales prior to time *t*. Notice that absent news the belief, *x <sub>t</sub>*, is decreasing in sales *Q <sub>t</sub>* when *δ <sub>G</sub>*  >  *δ <sub>B</sub>*, which we call the *good news environment*, and increasing when *δ <sub>G</sub>*  <  *δ <sub>B</sub>*, which we call the *bad news environment*.
+
+## 3\. Heuristic argument why delays arise
+
+We skip technical details for later and assume three properties that make the analysis simpler: skimming property, marginal cost pricing after good news, and sequential sales. Skimming property says that higher types buy before lower types. This is always true in our model (as we show in ) because higher types get strictly higher stopping payoffs whenever the belief is strictly positive. Importantly, skimming property implies that the current highest type in the market pins down the distribution of buyers and thus the quantity of past sales (which equal $(1−F(θ))$). The no-news belief is then just a function of the current highest type and we can denote it as *x* (*θ*).
+
+The second assumption is that the monopolist sells at the marginal cost after good news, making zero profits, as in the standard Coase conjecture (see e.g. ). After bad news the monopolist does not sell because the belief and the buyers’ valuation is zero. Absent news the monopolist must sell up to (some) type *θ <sub>E</sub>* such that $x(θE)θE=c$. If the monopolist stopped selling when the expected valuation was above the marginal cost, she would have a profitable deviation to sell more. The price the monopolist can extract from the exit type *θ <sub>E</sub>* is *c*. The third assumption on sequential sales implies that information arrives and the belief changes smoothly over sales in the continuous time limit. This happens as a smaller and smaller amount of buyers purchase in each period as the period length shrinks (see formal result in ).
+
+An equilibrium *features delays* if all sales do not take place at time 0 in the continuous time limit: all buyers purchase immediately or not at all. Suppose then that there are no delays and let the arrival rate of bad news be strictly positive, *δ <sub>B</sub>*  > 0. Consider the problem of a buyer of type *θ* greater than the exit type, *θ*  >  *θ <sub>E</sub>*. If he mimics the exit type, he gets the following payoff:$β(θ,θE)(θx(θE)−c)+γ(θ,θE)(θ−c),$where *β* (*θ, θ <sub>E</sub>*) denotes the probability of no news arriving and *γ* (*θ, θ <sub>E</sub>*) denotes the probability of good news arriving before type *θ <sub>E</sub>*.In other words, the buyer gets the first term if no news arrives and he gets the second term if good news arrives. If bad news arrives, he gets zero.
+
+By the martingale property of the belief we have that $x(θ)=β(θ,θE)x(θE)+γ(θ,θE)$. That is, we can decompose the belief at type *θ <sub>E</sub>* to no news, good news and bad news components. Using this, the buyer’s value from the deviation simplifies to (1) $θx(θ)−(β(θ,θE)+γ(θ,θE))c.$Because type *θ* must obtain at least this value in equilibrium, the price charged from type *θ* can be at most $(β(θ,θE)+γ(θ,θE))c$, which is strictly less than the marginal cost as $β(θ,θE)+γ(θ,θE)<1$ when *δ <sub>B</sub>*  > 0. This then immediately implies that the monopolist’s profits must be strictly negative if she sells without delays, contradicting the monopolist’s optimality as selling nothing yields zero.
+
+Notice that delays arise from the fact that by mimicking the exit type buyers can save the price (marginal cost) in the event if bad news arrives. Buyers thus have a strictly positive option value of waiting and it is this option value which drives delays under endogenous learning. Because everything is continuous in the model, this argument can be extended to rule out immediate sales to types slightly above the exit type. Hence, delays are non-trivial in the sense that it is insufficient to delay only the sales to the exit type.
+
+The formal result about the necessity of delays in MPE is given in in . We first build the formal apparatus for presenting the result.
+
+## 4\. Markov perfect equilibrium
+
+We are interested in the seller’s behavior when she cannot commit to a strategy beforehand. We focus on stationary Markov perfect equilibria (MPE) in which equilibrium strategies depend only on payoff relevant variables.
+
+### 4.1. Buyer’S problem
+
+We start with two familiar results for the buyers’ problem. Suppose that the price follows a stochastic process *p <sub>t</sub>* adapted to $Ft$, the natural filtration generated by past sales and news with a generic element *h <sub>t</sub>*. A buyer’s problem is to choose an optimal stopping time *τ* such that it maximizes his payoff:$supτE(e−rτ(θω−pτ)).$
+
+Let *τ* (*θ*) denote an optimal stopping time for a buyer of type *θ* and let $T$ denote the *schedule of purchasing times* for all types: $T:={τ(θ)}$. We then have that the skimming property (higher types buy first) holds and that we can use the envelope theorem to pin down a buyer’s value:
+
+**Lemma 1**
+
+*(i) Optimal purchasing times are decreasing in type: in any realized path of purchasing times, τ* (*θ* ′) ≤  *τ* (*θ*) *for all θ* ′ >  *θ.*
+
+*(ii) By buyer’s indifference, for a given schedule of purchasing times* $T$*, the price is given by:*(2) $pt=θt+Δxt−WΔ(θt+Δ;ht)$ *where a buyer’s value is given by the envelope theorem (Theorem 2 in (**)):*(3) $WΔ(θ;ht)=E[∫θ‾θe−rτ(s)xτ(s)ds|θt,xt].$
+
+The key takeaway from is that the current highest type, say *θ <sub>t</sub>*, pins down the distribution of buyers remaining in the market and thus also the no-news belief, which depends only on the total amount of sales up to time *t*. We can then write the buyers’ value as an integral over the discounted purchasing times.
+
+### 4.2. Equilibrium and strategies
+
+We use to define the equilibrium so that the monopolist chooses quantities. The payoff relevant information is fully characterized by the current highest type in the market, *θ <sub>t</sub>*, and the current belief, *x <sub>t</sub>* (from ). We refer to (*θ <sub>t</sub>, x <sub>t</sub>*) as the (Markov) state and let $S:=[θ‾,θ‾]×[0,1]$ denote the set of all possible states. We define a pure strategy MPE as a triplet of functions (*V* <sub>Δ</sub>, Λ <sub>Δ</sub>, *P* <sub>Δ</sub>), where $VΔ:S→R+$ is the monopolist’s value function, $ΛΔ:S→R+$ maps states to the rates of sales and $PΔ:[θ‾,θ‾]×S→R$ specifies the highest price each type is willing to pay given the current state. We use $θΔ+(λ,θ)$ to denote the highest type in the next period when the current highest type is *θ* and the rate of sales is *λ*: it solves $F(θ)−F(θΔ+(λ,θ))=λΔ$. Finally, we use $x+$ to denote the (random) belief in the next period.
+
+**Definition 1**
+
+A triplet (*V* <sub>Δ</sub>, Λ <sub>Δ</sub>, *P* <sub>Δ</sub>) is a pure strategy stationary Markov perfect equilibrium (later just equilibrium) if it satisfies the following:
+- •
+	Monopolist’s optimality:(4) $VΔ(θ,x)=maxλ≥0{(PΔ(θΔ+(λ,θ);(θ,x))−c)λΔ+e−rΔE[VΔ(θΔ+(λ,θ),x+)|(θ,x),λ]}$
+- •
+	$λ=ΛΔ(θ,x)$ maximizes .
+- •
+	Buyers’ optimality (by the envelope theorem): For all *θ* ′ <  *θ*,(5) $PΔ(θ′;(θ,x))=θ′x−e−rΔE[∫θ‾θ′e−rτ(θ)xτ(θ)dθ|(θ,x),θ′].$
+
+We show in the Online Appendix that a pure strategy MPE always exists.
+
+A convenient feature of our model is that it is enough to know the current highest type and whether good or bad news has arrived to keep track of the state. Because we often want to condition on no news arriving, it is useful to define notation for the probability that news does not arrive between sales to types *θ <sub>t</sub>* and *θ <sub>k</sub>* (*θ <sub>t</sub>*  >  *θ <sub>k</sub>*):(6) $β(θt,θk):=x(θt)e−δG(F(θt)−F(θk))+(1−x(θt))e−δB(F(θt)−F(θk)).$
+
+After conditioning on news, the purchasing times become deterministic: we let *t* <sub>Δ</sub> (*θ*; *θ <sub>t</sub>*) denote the time until type *θ* purchases conditional on no news when the current highest type is *θ <sub>t</sub>* and similarly let $tΔG(θ;θt)$ denote the time until he purchases if the quality is known to be high (after good news). It is clear that no buyer purchases after bad news.
+
+The rest of this section derives two necessary conditions for equilibria in the continuous time limit of the game ( and ) which we then use to characterize equilibrium behavior in the limit. Notably, we derive which formalizes the delay result from .
+
+### 4.3. Continuous time limit and coase conjecture
+
+We are primarily interested in equilibrium outcomes as the period length shrinks to zero. We first establish that a suitable form of the Coase conjecture holds for our model. It is a well known result in the literature that the Coase conjecture holds when there is no uncertainty about the product quality, and hence we have the following after good news:
+
+**Lemma 2**
+
+## , Theorem 5.4
+
+*For all* ϵ > 0*, there exists* $Δ¯$ *such that if* $Δ<Δ¯$*, any MPE satisfies* $tΔG(θ′;θ)≤ϵ$ *for all* $θ′>c+ϵ$ *and θ*  >  *θ* ′*.*
+
+With learning, we get a more general but weaker form of the Coase conjecture: either purchasing times or the monopolist’s value is very small as the period length shrinks.
+
+**Proposition 1** Coase conjecture
+
+*For all* ϵ > 0*, there exists* $Δ¯$ *such that if* $Δ<Δ¯$*, any MPE satisfies at least one of the following for all θ*  >  *θ* ′*: (i) t* <sub>Δ</sub> (*θ* ′; *θ*) ≤ ϵ *or (ii)* ∃ *θ* ″ ∈ \[*θ* ′, *θ*\] *such that V* <sub>Δ</sub> (*θ* ″, *x* (*θ* ″)) ≤ ϵ*.*
+
+Essentially, says that the equilibrium monopolist suffers from Coasian dynamics: she lowers the price until her value from sales is zero. Notice that this does not guarantee immediate sales because even when the monopolist’s value is zero the price might not be low enough to entice buyers to purchase immediately.
+
+### 4.4. Amount of sales in the continuous time limit
+
+For the rest of , we focus on characterizing equilibrium behavior in the continuous time (or frequent offer) limit as Δ → 0. More precisely, we say that a purchasing time profile *t* ( ·;  · ) is a *continuous time limit of equilibrium* if there exists a decreasing sequence {Δ} → 0 and a corresponding sequence of equilibrium purchasing profiles { *t* <sub>Δ</sub> ( ·;  · )} that converges to *t* ( ·;  · ) pointwise. We do not characterize the equilibrium strategies in the continuous time limit. Notice also that we do not assume uniqueness. For details about the buyer’s and monopolist’s value in the limit see .
+
+We start by deriving how long the monopolist keeps selling the product absent news. We call $θE:=inf{θ∈[θ‾,θ‾]:t(θ;θ‾)<∞}$ *the exit type*. The monopolist does not sell to types below the exit type unless good news arrives. implies that the price goes to the marginal cost and the monopolist’s value goes to zero after good news as the period length shrinks. Hence, before news, the monopolist does not prolong exit in the hope of generating good news, but she stops selling when the expected valuation of the highest remaining buyer equals the marginal cost:
+
+**Proposition 2**
+
+*All equilibria satisfy the following in the continuous time limit:*
+- (i)
+	*The no-news exit type θ <sub>E</sub> satisfies* $x(θE)θE=c$*.*
+- (ii)
+	*If the monopolist keeps selling after θ such that* $x(θ)θ=c$*, then there exists θ* ′ <  *θ such that* (7) $∫θ′θβ(θ,s)(x(s)θ′−c)f(s)ds>0.$
+
+We prove in by characterizing the exit condition in discrete time and taking the continuous time limit. The integral in Condition is an upper bound for the monopolist’s profits if she keeps selling the product. It can be satisfied only in the bad news environment. This is because the no-news belief increases over sales if bad news dominates, and hence later sales may generate more surplus than earlier sales. Conversely, in the good news environment, the expected valuation is monotone on the no-news path, and hence there is a unique *θ <sub>E</sub>* such that $x(θE)θE=c$.
+
+Together with the non-negativity of the monopolist’s value, and provide the necessary conditions for equilibrium in the continuous time limit, which we use to derive equilibrium properties. We turn to the necessity of delays next.
+
+### 4.5. Delays in the continuous time limit
+
+Next, we use the necessary conditions to analyze delays in the continuous time limit. In , our motivating example used marginal cost pricing so that prices stay constant over time and buyers purchase the product slowly, or at least not instantaneously, over time. Based on the necessary conditions, this is one possible outcome in equilibrium. However, the necessary conditions do not rule out other pricing paths.. It is well known that MPE are not unique in the game without uncertainty (see ). Under endogenous learning, the multiplicity of equilibria may remain in the continuous time limit because Coasian dynamics () do not imply immediate sales as below makes clear.
+
+Because of potential multiplicity, we characterize the delay properties that hold for all sales paths consistent with the necessary conditions. Our approach yields uniform bounds across all equilibria.
+
+We start by showing that the game does not end in finite time:
+
+**Lemma 3**
+
+*Suppose δ <sub>B</sub>*  > 0 *and let a purchasing time profile t* ( ·;  · ) *be a continuous time limit of equilibrium with an exit type θ <sub>E</sub>. Then, for all θ*  >  *θ <sub>E</sub> and K*  > 0*, there exists* ϵ > 0 *such that* $t(θE+ϵ;θ)≥K$*.*
+
+The intuition behind is that when the marginal type goes toward *θ <sub>E</sub>*, the marginal surplus between the current buyer and the monopolist goes to zero. At the same time, the buyer must be compensated for the option value of waiting. The only way to make the option value vanish is for the rate of sales to go to zero. Thus, delays are a necessary feature of any equilibrium. However, as ϵ is allowed to depend on the equilibrium, alone does not give a uniform bound guaranteeing payoff-relevant delays. In our main result, we show that equilibrium delays are uniformly bounded away from zero:
+
+**Theorem 1**
+
+*Suppose that δ <sub>B</sub>*  > 0 *and that* $x0θ‾>c$*. Then, there exists a uniform bound on equilibrium delays: for all θ*  >  *θ <sub>E</sub>, there exists k*  > 0 *and* ϵ > 0 *such that* $t(θE+ϵ;θ)≥k$ *in the limit of any equilibrium.*
+
+We show by finding an upper bound on the monopolist’s payoff that does not depend on equilibrium details but only assumes that she sells up to $θE+ϵ$ within time *k*. Then, we show that the upper bound is negative for small *k* and ϵ. According to , delays bounded away from zero arise whenever bad news learning is present, including the case when good news learning dominates, *δ <sub>G</sub>*  >  *δ <sub>B</sub>*. Hence, delays do not depend on the law of motion of the belief. Furthermore, delays occur because consumers need to be compensated for the lost opportunity to react to decision-relevant information, i.e., the arrival of bad news. We show in that the social optimum never features delays.
+
+Another way of approaching the reasoning behind is that it shows that there does not exist any individually rational and incentive compatible mechanism where all buyers above type *θ <sub>E</sub>* buy absent news and all types above *c* buy after good news. This argument is consistent with the discussion in . To see that sequential rationality imposes additional constraints on efficiency, we compare the equilibria with the monopolist’s commitment solution in . The comparison illustrates that limiting the total amount of sales may lead to higher welfare than what can be achieved in equilibrium.
+
+## 5\. Socially optimal and commitment solutions
+
+In this section, we solve the constrained efficient and the monopolist’s commitment solutions. We show that neither features delays. We also show that the commitment solution can be more efficient than the equilibrium because of either faster sales or larger total sales.
+
+We characterize both solutions directly in the continuous time limit.
+
+### 5.1. Socially optimal solution
+
+Consider the problem of a social planner who seeks to maximize the total surplus:(8) $∫θ‾θ‾e−rt(θ;θ‾)β(θ‾,θ)(x(θ)θ+δGx(θ)UG(θ)−c)f(θ)dθ,$where $UG(θ)=∫cθ(s−c)f(s)ds$ is the social value of good news. The integrand is the total marginal surplus. Notice that we have already used the skimming property in . It is easy to see that the skimming property also holds in the socially optimal solution because it is *ex post* efficient that higher types consume first. Notice also that we have assumed that sales take place sequentially so that information arrives between sales. This maximizes the amount of information and is hence clearly optimal.
+
+The planner’s objective is linear in the discounting term, $e−rt(θ;θ‾)$, and hence the socially optimal purchasing times are bang-bang: everyone either purchases immediately or not at all. This gives:
+
+The locally optimal exit condition is that the total marginal surplus equals zero. However, in the bad news environment, the total marginal surplus may be non-monotone and the planner may want sales even when the current marginal surplus is negative. The socially optimal solution is characterized by:
+
+**Proposition 3**
+
+*In the socially optimal solution, all types greater than θ* \* *purchase immediately absent news and all types greater than c purchase immediately after good news. The cutoff θ* \* *is the largest θ such that* $x(θ)θ+δGx(θ)UG(θ)=c$ *and* $∫θ′θβ(θ,s)(x(s)θ(s)+x(s)δGUG(s)−c)f(s)ds≤0$ *for all θ* ′ <  *θ.*
+
+The planner’s exit condition in differs from the equilibrium exit condition in as the planner takes into account the social value of good news (*U <sup>G</sup>*). Compared to the social planner, the equilibrium monopolist thus sells (and experiments) too little. As the equilibrium monopolist cannot capture the gains from good news, good news learning distorts the amount of sales. Bad news learning, in contrast, distorts the rate of sales. Intuitively, these different distortions arise because bad news and good news provide decision relevant information at different points in the game. The arrival of bad news reverses the decision to sell while the arrival of good news reverses the decision to stop.
+
+### 5.2. Commitment solution
+
+We can derive the monopolist’s commitment solution similarly to the planner’s once we rewrite the monopolist’s payoff by using the virtual surplus. Qualitatively, the main findings are that the commitment solution does not feature delays and that the amount of sales depends only on whether news has arrived but not on the time when news arrived.
+
+The commitment monopolist maximizes her *ex-ante* payoff by designing a schedule of purchasing times for all types, $T$. The monopolist’s payoff is $Π(T;θt)=∫θ‾θte−rt(θ;θt)β(θt,θ)(x(θ)(θ+δGΠG(T;θ))−W(θ;θ)−c)f(θ)dθ,$where $ΠG(T;θ):=∫θ‾θe−rtG(θ′;θ)(θ′−WG(θ′;θ′)−c)f(θ′)dθ′$ denotes the monopolist’s payoff when good news arrives when *θ* is the highest type.
+
+The first step in solving the commitment monopolist’s problem is to simplify her payoff by expressing it in terms of virtual surplus. This step resembles static mechanism design and papers analyzing dynamic problems with similar techniques (e.g. ): we use the envelope theorem formula from to write a buyer’s value as an integral over the type and then use Fubini’s theorem to simplify the resulting expression for the monopolist’s payoff (see ).
+
+**Lemma 5**
+
+*Suppose the monopolist’s strategy induces a schedule of incentive compatible purchasing times* $T$*. Then the monopolist’s payoff absent news equals* $Π(T;θt)=∫θ‾θte−rt(θ;θt)β(θt,θ)ϕ(T,θ;θt)f(θ)dθ,$*where* $ϕ(T,θ;θt)$ *is the (marginal) no-news virtual surplus defined as* $ϕ(T,θ;θt):=(θ+δGΦG(T,θ;θt)−F(θt)−F(θ)f(θ))x(θ)−c,$*and* $ΦG(T,θ;θt)$ *is the virtual payoff of good news arriving when θ is the highest type:*$ΦG(T,θ;θt):=∫θ‾θe−rtG(s;θ)(s−c−F(θt)−F(s)f(s))f(s)ds.$
+
+allows us to write a dynamic optimization problem as a static problem of allocating purchasing times to buyers. Similar to static mechanism design, the virtual surplus takes into account not only marginal revenue but also information rents going to higher type buyers. The virtual surplus depends on the allocation through the *virtual payoff* from sales after good news, $ΦG(T,θ;θt)$. Crucially, the virtual payoff takes into account the increase in buyers’ rents (before and after good news) caused by sales after good news.
+
+Notice that $Π(T;θt)$ is linear in the discounting terms $e−rt(θ;θt)$, which gives the counterpart of :
+
+**Lemma 6**
+
+*Suppose the commitment monopolist finds it strictly optimal to sell at least until* $θt=θN$ *absent news. Then, she sells immediately to all θ*  >  *θ <sub>N</sub> absent news.*
+
+implies that no profile with delays can yield strictly higher profits than the optimal profile without delays. The commitment monopolist does not need to delay sales in order to decrease the buyers’ value of waiting, because she can simply commit to selling less in the future. For the rest of the analysis, we focus on profiles without delays.
+
+Given , the remaining question is how much the commitment monopolist sells. The monopolist’s virtual payoff after good news is maximized by selling to all types where the virtual surplus evaluated at the beginning of the game is positive, i.e. sell to all types above *θ <sub>G</sub>* such that $θG−(1−F(θG))/f(θG)=c$. Importantly, the timing of good news does not affect the optimal sales. When the monopolist follows the optimal strategy, the virtual value of good news, $ΦG*(θ)$, can be calculated in closed form:(9) $ΦG*(θ)=∫θGθ(s−1−F(s)f(s)−c)f(s)ds=−(θ−θG)(1−F(θ))+(θG−c)(F(θ)−F(θG).$The first term of is the loss arising from that the higher types pay a lower price because of sales after good news and the second term is the monopolist’s payoff after good news.
+
+Absent news, the analysis boils down to analyzing the behavior of the no-news virtual surplus evaluated at the beginning of the game:(10) $ϕ*(θ;θ‾):=(θ+δGΦG*(θ)−1−F(θ)f(θ))x(θ)−c.$The virtual surplus captures the marginal tradeoff the monopolist is facing when choosing the total amount of sales. Local optimality is satisfied if the virtual surplus equals zero, but to account for global deviations, we need to check whether the monopolist wants to sell just in order to facilitate:
+
+**Proposition 4**
+
+*The commitment solution is characterized by:*
+- (i)
+	*Absent news, the monopolist sells without delay to all types greater than θ <sub>N</sub>. The cutoff θ <sub>N</sub> is the largest θ such that* $(θ+δGΦG*(θ)−1−F(θ)f(θ))x(θ)=c$ *and* $∫θ′θβ(θ,s)ϕ*(s;θ‾)f(s)ds≤0$ *for all θ* ′ <  *θ.*
+- (ii)
+	*After good news the monopolist sells without a delay to all types greater than θ <sub>G</sub> such that* $θG−1−F(θG)f(θG)=c.$
+
+In the first part of , the sufficiency condition is needed to take into account the value of information as sales today may bring value tomorrow. The second part of says that the timing of good news does not affect the monopolist’s strategy after good news in any way: the final allocation always corresponds to the static monopoly allocation and is thus independent of the highest type at the time when good news arrives. This is because the commitment monopolist takes into account *all* rents to buyers caused by selling after good news. These rents accrue both *before* good news arrives and *after* good news has arrived.
+
+The solution to the commitment problem bears similarities with static mechanism design. An important difference is that the evolution of the belief is endogenous and thus if the seller would allocate the product differently (e.g. non-monotonically) the virtual surplus would also change. This also suggests that the negative virtual surplus types represent the dynamic cost of information that stems from the belief process and the buyers’ ability to wait. The seller has to pay this cost in order to produce information. The non-monotonicity of the virtual surplus is typical in bad-news environments with large *δ <sub>G</sub>*: the belief increases over sales and therefore the monopolist can capture higher profits from sales to lower types.
+
+### 5.3. Comparison of MPE and the commitment solution
+
+We have the following result regarding the amount of sales (proof in ):
+
+**Proposition 5**
+
+*The following comparison holds in the continuous time limit when δ <sub>G</sub>*  > 0*:*
+- (i)
+	*There exists an initial belief such that there are sales in the commitment solution but not in any equilibrium.*
+- (ii)
+	*There exists* $δ¯B>δG$ *such that for all* $δB<δ¯B,$*there exists an initial belief such that even though there are sales in both solutions, the expected sales are greater in the commitment solution.*
+
+gives sufficient conditions under which the commitment monopolist sells more in expectation than the equilibrium monopolist. Essentially, when the belief is low, the commitment monopolist sells more because she can internalize the value of information. Once the initial belief is low enough, the commitment monopolist’s stronger incentive to sell to the first consumers affects expected sales more than the standard monopoly distortion. Notice that whenever the commitment monopolist sells more, she also delivers more buyer surplus because there are no delays. Hence, the buyers would actually prefer the monopolist to have commitment power.
+
+Besides larger expected sales, the commitment solution may also provide more consumer surplus because of *faster* sales. It is fairly straightforward to construct an example in which, for example, the initial price is lower in the commitment solution than in the MPE even though expected sales are larger in the MPE. A lower initial price implies a larger buyer surplus as one can verify from .
+
+## 6\. Discussion and conclusions
+
+### 6.1. Discussion
+
+We first shortly discuss some aspects of the model and results, and their relation to the existing literature, before presenting conclusions.
+
+**Endogenous vs. exogenous learning.** A crucial difference between *exogenous* and *endogenous* learning from current actions is that delays are necessarily inefficient under endogenous learning but may be efficient under exogenous learning. This is because under exogenous learning waiting (exogenously) brings new information and thus allows the decision maker to make a more informed decision. In contrast, when learning happens endogenously through actions taken at the current period, waiting (not taking an action) only implies more discounting for the decision maker. Hence, there is no option value of waiting. In our model, the monopolist learns endogenously by selling the product and thus has no option value from waiting. Hence, delays are also inefficient because waiting (not selling) brings no new information.
+
+The comparison between endogenous learning and exogenous learning can be used to understand the results of this paper. The monopolist learns endogenously from the amount she sells. In contrast, from an individual buyer’s perspective learning happens exogenously *from the purchases of other buyers*. Thus, the buyers have option value of waiting as long as the monopolist is selling the product. It is because of the buyers’ option value that we have delays in MPE: the monopolist has to compensate it to the buyers and cannot do so profitably if all sales happen immediately. Delays in our model thus happen for *strategic* rather than *informational* reasons.
+
+**Learning from the stock of sales.** We have shut down the monopolist’s informational incentives to delay sales by assuming that learning happens *instantaneously*: signals about quality are revealed immediately after purchases. Another natural way of modelling learning would be to assume that a purchase today generates a sequence of signals *gradually* over time so that the arrival of news would depend on the *stock* of all buyers who have purchased in the past. Similarly to exogenous learning, gradual learning creates a positive option value of waiting for the monopolist who has already served some fraction of the market. If learning was from the stock of past sales instead of from the flow of new sales, some delays would be efficient.
+
+**Interdependent values and learning-by-doing.** There are delays in Markov perfect equilibrium in bargaining under interdependent values and in durable goods monopoly under learning-by-doing, see (), (), and (). The similarity between those models and the present paper is that there is an externality between sales: the belief changes over sales in our environment and the monopolist’s cost of production changes over sales under learning-by-doing and correlated values. The key difference is that the externality is informational and stochastic in our paper. Furthermore, the belief process is a martingale (no drift), while the cost of production needs to decrease over sales to obtain delays in , , and .
+
+**Good news versus bad news learning.** In our model, bad news learning causes inefficient delays in MPE. This is because in order to make the buyers willing to purchase, the monopolist must compensate them for the possibility that bad news arrives and reverses the optimal action. Good news learning creates an inefficiency in that the monopolist sells too little when good news learning is present because she does not internalize the value of good news.
+
+The reason the type of news matters for these inefficiencies is that bad news and good news provide decision relevant information at different points in the game. The arrival of good news matters only at the exit type because good news is decision relevant only if the monopolist is *not willing* to sell absent news. In contrast, the arrival of bad news is decision relevant only if the monopolist *is willing* to sell absent news. Because good news and bad news provide information at different margins, their arrival rates affect equilibrium behavior differently. Notice that these differences do not arise from the difference in the law of motion for the no news belief: it does not matter whether bad news or good news are more likely but whether they are possible.
+
+### 6.2. Conclusions
+
+A central challenge in economics is understanding how information shapes market behavior. This paper studies a market in which both a monopolistic seller and potential buyers are learning how valuable a new product is. The value, or quality, is revealed over time as buyers purchase the product. Compared to the complete information benchmark, endogenous learning introduces new inefficiencies in terms of smaller and slower sales. These inefficiencies arise because of Coasian dynamics: the seller’s temptation to lower the price in order to speed up sales. Interestingly, the specifics of the learning environment matter for which type of inefficiency may arise. Good news learning causes too small sales while bad news learning causes too slow sales.
+
+## CRediT authorship contribution statement
+
+**Tuomas Laiho:** Writing – review & editing, Writing – original draft, Project administration, Methodology, Formal analysis, Conceptualization. **Julia Salmi:** Writing – review & editing, Writing – original draft, Project administration, Methodology, Formal analysis, Conceptualization.
+
+## Declaration of competing interest
+
+We have not obtained an IRB approval for this project because it is purely theoretical. Tuomas Laiho declares that he has no relevant or material financial interests that relate to the research described in this paper. He has received financial support from ERC grant no. 683,031 through PI Bård Harstad. Julia Salmi declares that she has no relevant or material financial interests that relate to the research described in this paper. She has received financial support from Emil Aaltonen Foundation, OP Group Research Foundation, Yrjö Jahnsson Foundation, and the ERC grant no. 682,417 through PI Vasiliki Skreta.
+
+## Appendix A. Preliminaries
+
+### A1. Proof of
+
+**Proof.**Part(i): purchasing times form a lattice with the partial order defined as *τ*  ≥  *τ* ′ if the buyer always purchases weakly later under *τ* than under *τ* ′. Discounting and the martingale property of the belief imply that the buyers’ payoff has strictly decreasing differences in type and time. The payoff is supermodular in time. Hence, monotonicity follows from the Topkis’s theorem.
+
+Then, Part (ii) follows from , Theorem 2. □
+
+### A2. Price choice vs quantity choice game
+
+By letting the seller decide quantities instead of prices separates us from some of the other papers in the durable goods and bargaining literature. This literature often makes a distinction between *strong* and *weak* Markov perfect equilibria (e.g. , , and ). In weak MPE, the price may depend on the previous period’s price, which is needed to prevent profitable deviations to different out-of-equilibrium prices and to guarantee existence. Letting the seller choose quantities implicitly prevents such deviations. The equilibrium conditions of a weak MPE in a price-choice game when the quality is known be high reduce to the equilibrium conditions in with $x=1$ (see e.g. ). We conjecture that the same is true with learning, but showing it formally is beyond the scope of this paper. Clearly, the equilibrium conditions in are necessary conditions for a weak MPE in a price-choice game with learning.
+
+## Appendix B. Proof of (Coase conjecture)
+
+### B1. Preliminaries
+
+**Useful notation**
+
+Fix an equilibrium. Notice that Λ <sub>Δ</sub> and *P* <sub>Δ</sub> recursively define the price paths for the equilibrium. In the proofs, it is useful to separate price paths conditional on the news. We use *P* <sub>Δ</sub> (*θ* ′; *θ*) to denote the price on the no-news path when selling to types from *θ* to *θ* ′. The initial type shows up in the expression through the belief and the transition probabilities, *β* and *δ*. We use $P+,Δ(θ)$ to denote the price charged when *θ* is the initial type. This means that if the equilibrium is such that the monopolist sells up to *θ* ′ from *θ*, then $P+,Δ(θ)=PΔ(θ′;θ)$. Similarly, $PΔG(θ′)$ and $P+,ΔG(θ)$ denote the equivalent objects after good news.
+
+### Proof of
+
+Theorem 5.4 of implies that for all ϵ′, there exists $Δ¯$ such that $P+,ΔG(θ)≤c+ϵ′$. The requirements of Theorem 5.4 are satisfied as the density function is bounded.
+
+Buyer *θ* ′ wants to purchase at price $P+,ΔG(θ)$ even if he expects the price to equal *c* after time ϵ when the following holds:$θ′−P+,ΔG(θ)≥e−rϵ(θ′−c).$As $P+,ΔG(θ)≤c+ϵ′$, the above holds for all $θ′≥c+ϵ′/(1−e−rϵ)$. Hence, we get that $tΔG(θ′,θ)≤ϵ$ for all $θ′≥c+ϵ′/(1−e−rϵ)$. By choosing $ϵ′=ϵ(1−e−1)min{1,rϵ}$, we get that $tΔG(θ′,θ)≤ϵ$ for all $θ′≥c+ϵ$. □
+
+**Lemma 7**
+
+*Let a sequence* ${Δ}n=1∞→0$*. For each* Δ*, fix an equilibrium, and define functions* $VΔN$ *and* $VΔG$ *such that* $VΔN(θ)=VΔ(θ,x(θ))$ *and* $VΔG(θ)=VΔ(θ,1)$ *where V* <sub>Δ</sub> *is the monopolist’s value in some equilibrium. Then,*${VΔN}n=1∞$ *and* ${VΔG}n=1∞$ *have subsequences that converge uniformly to continuous functions, denoted by V <sup>N</sup> and V <sup>G</sup>.*
+
+**Proof.**We present the proof for $VΔN$. The identical argument with fewer terms works for $VΔG$. We proceed to show that ${VΔN}n=1∞$ is an equicontinuous family. Then Arzelá-Ascoli theorem implies that (a subsequence of) ${VΔN}n=1∞$ converges uniformly to a continuous function. Let *θ*  >  *θ* ′. We first bound $VΔN(θ)−VΔN(θ′)$ from below. Let the equilibrium be such that the monopolist sells up to *θ* ″ from *θ* ′. This gives $VΔN(θ′)=(PΔ(θ″;θ′)−c)(F(θ′)−F(θ″))+e−rΔβ(θ′,θ′)VΔN(θ″)+e−rΔγ(θ′,θ″)VΔG(θ″),$where *β* and *δ* are transition probabilities: $β(θ,θ′)=x(θ)e−δG(F(θ)−F(θ′))+(1−x(θ))e−δB(F(θ)−F(θ′))$ and $γ(θ,θ′)=x(θ)e−δG(F(θ)−F(θ′))$. The monopolist may choose to sell up to *θ* ″ also when *θ* is the current highest type. This yields $VΔN(θ)≥(PΔ(θ″;θ)−c)(F(θ)−F(θ″))+e−rΔβ(θ,θ′)VΔN(θ″)+e−rΔγ(θ,θ″)VΔG(θ″)=(PΔ(θ″;θ)−c)(F(θ)−F(θ′))+(PΔ(θ″;θ)−PΔ(θ″;θ′))(F(θ′)−F(θ″))+e−rΔ(β(θ,θ″)−β(θ′,θ″))VΔN(θ″)+e−rΔ(γ(θ,θ″)−γ(θ′,θ″))VΔG(θ″)+VΔN(θ′).$
+
+Notice that the price difference $PΔ(θ″;θ)−PΔ(θ″;θ′)$ can be explicitly calculated:(B.1) $PΔ(θ″;θ)−PΔ(θ″;θ′)=(1−e−rΔ)(x(θ)−x(θ′))θ″+e−rΔ(β(θ,θ″)−β(θ′,θ″))P+,Δ(θ″)+e−rΔ(γ(θ,θ″)−γ(θ′,θ″))P+,ΔG(θ″)≥(1−e−rΔ)min{0,x(θ)−x(θ′)}θ″+e−rΔ(γ(θ,θ″)−γ(θ′,θ″))P+,ΔG(θ″).$
+
+By using that $VΔG(θ′),P(θ″;θ)≥0$, $γ(θ,θ″)−γ(θ′,θ″)≥0$, and that $β(θ,θ″)−β(θ′,θ″)≥−(x(θ)δG+(1−x(θ))δB)(F(θ)−F(θ′))$, we get $VΔN(θ)−VΔN(θ′)≥−c(F(θ)−F(θ′))−e−rΔ(x(θ)δG+(1−x(θ))δB)(F(θ)−F(θ′))≥−(c+δB+δG)K(θ−θ′),$where $K:=supθf(θ)$.
+
+Next, we find an upper bound. Let the sales path after *θ* be $(θ=θ0,θ1,⋯,θk)$ where *k* satisfies $θk−1≥θ′>θk$. Now, the monopolist has a feasible strategy at *θ* ′ to wait for $k−1$ periods and then sell up to *θ <sub>k</sub>*. This yields:$VΔN(θ′)≥(PΔ(θk;θ′)−c)(F(θ′)−F(θk))+e−r(k−1)Δβ(θ′,θk)VΔN(θk)+e−rkΔγ(θ′,θk)VΔG(θk).$The value at *θ* equals $VΔN(θ)=∑i=1ke−r(i−1)Δβ(θ,θi−1(PΔ(θi;θi−1)−c)(F(θi−1)−F(θi))+∑i=1ke−r(i−1)Δβ(θ,θi−1)γ(θi−1,θi)VG(θi)+e−rkΔβ(θ,θk)VΔN(θk).$We get (B.2) $VΔN(θ′)−VΔN(θ)≥e−r(k−1)Δ(PΔ(θk;θ′)−c)(F(θ′)−F(θk))−e−r(k−1)Δ(PΔ(θk;θk−1)−c)(F(θk−1)−F(θk))−∑i=1k−1e−r(i−1)Δβ(θ,θi−1)(PΔ(θi;θi−1)−c)(F(θi−1)−F(θi))+e−rkΔ(β(θ′,θk)−β(θ,θk))VΔN(θk)−∑i=1k−1e−r(i−1)Δβ(θ,θi−1)γ(θi−1,θi)VG(θi)+e−rkΔ(γ(θ′,θk)−β(θ,θk−1)γ(θk−1,θk))VG(θk)≥e−r(k−1)Δ(PΔ(θk;θ′)−PΔ(θk;θk−1))(F(θ′)−F(θk))+e−r(k−1)Δ(PΔ(θk;θk−1)−c)(F(θ′)−F(θk−1))−max{0,(F(θ)−F(θk−1))maxi∈{1,⋯,k−1}(PΔ(θi;θi−1)−c)}−γ(θ,θk−1)maxi∈{1,⋯,k−1}VG(θi)+e−rkΔ(γ(θ′,θk)−β(θ,θk−1)γ(θk−1,θk))VG(θk).$We can evaluate the lower bound further by using the following properties: $|F(θ′)−F(θk−1)|≤F(θ)−F(θ′),F(θ)−F(θk−1)≤F(θ)−F(θ′),γ(θ,θk−1)≤γ(θ,θ′)=x(θ)(1−e−δG(F(θ)−F(θ′)))≤x(θ)δG(F(θ)−F(θ′)),γ(θ′,θk)−β(θ,θk−1)γ(θk−1,θk))≥γ(θ′,θk)−γ(θ,θk)=(1−β(θ,θ′))γ(θ′,θk)−γ(θ,θ′)≥−γ(θ,θ′)≥x(θ)δG(F(θ)−F(θ′)),|x(θ′)−x(θ)|=|x(θ′)(1−x(θ))(1−e−(δG−δB)(F(θ)−F(θ′)))|≤|δG−δB|(F(θ)−F(θ′))$. Together with , they give that $PΔ(θk;θ′)−PΔ(θk;θk−1)$ is bounded below by $(1−e−rΔ)min{0,x(θ′)−x(θ)}θk+e−rΔ(γ(θ′,θk)−γ(θ,θk))P+,ΔG(θk).$
+
+Now we see that has a lower bound of the form $−A(F(θ)−F(θ′))$, where *A* is independent of *θ, θ* ′, and Δ. As $F(θ)−F(θ′)≤K(θ−θ′)$, we conclude that ${VΔN}n=1∞$ is an equicontinuous family of functions and hence has a subsequence that converges uniformly to a continuous function. □
+
+### B2. Proof of
+
+**Proof.** Suppose that *t* <sub>Δ</sub> (*θ* ′; *θ*) > ϵ for all Δ. Fix Δ and the equilibrium. Notice that if *t* <sub>Δ</sub> (*θ* ′; *θ*) is unbounded and goes to infinity, Case (ii) is automatically satisfied. Therefore, we restrict to finite *t* <sub>Δ</sub> (*θ* ′; *θ*). Let $(θ=θ1,θ2,⋯,θn)$ be the equilibrium sequence of highest types absent news such that $θn−1>θ′$ and *θ <sub>n</sub>*  ≤  *θ* ′. We have $n=tΔ(θ′;θ)/Δ$. Let Δ be small enough that *n*  > 2.
+
+Choose $i∈{2,⋯,n−1}$ such that $F(θi−1)−F(θi+1)<2(F(θ)−F(θ′))/n$. Such *i* necessarily exists by construction. Our proof proceeds to show that if selling immediately up to $θi+1$ from $θi−1$ is not a profitable deviation, then the monopolist’s value $VΔN(θi+1)$, defined in , must be arbitrarily small if Δ is small. The value satisfies $VΔN(θi−1)=(PΔ(θi;θi−1)−c)(F(θi−1)−F(θi))+e−rΔβ(θi−1,θi)(PΔ(θi+1;θi)−c)(F(θi)−F(θi+1)+e−rΔγ(θi−1,θi)VΔG(θi)+e−r2Δβ(θi−1,θi)γ(θi,θi+1)VΔG(θi+1)+e−r2Δβ(θi−1,θi+1)VΔN(θi+1).$If she deviates to selling up to $θi+1$, she gets $V˜ΔN(θi−1)=(PΔ(θi+1;θi−1)−c)(F(θi−1)−F(θi+1))+e−rΔγ(θi−1,θi+1)VΔG(θi+1)+e−rΔβ(θi−1,θi+1)VΔN(θi+1).$
+
+The monopolist’s incentive compatibility requires $VΔN(θi−1)−V˜ΔN(θi−1)≥0$. We proceed to evaluate the difference:(B.3) $VΔN(θi−1)−V˜ΔN(θi−1)Δ=PΔ(θi;θi−1)−PΔ(θi+1;θi−1)Δ(F(θi−1)−F(θi))$ (B.4) $+PΔ(θi+1;θi)−PΔ(θi+1;θi−1)Δe−rΔβ(θi−1,θi)(F(θi)−F(θi+1))$ (B.5) $−1−e−rΔβ(θi−1,θi)Δ(PΔ(θi+1;θi−1)−c)(F(θi)−F(θi+1))$ (B.6) $+γ(θi−1,θi)Δe−rΔVΔG(θi)+γ(θi,θi+1)Δe−r2Δβ(θi−1,θi)VΔG(θi+1)$ (B.7) $−γ(θi−1,θi+1)Δe−rΔVΔG(θi+1)$ (B.8) $−1−e−rΔΔe−rΔβ(θi−1,θi+1)VΔN(θi+1).$
+
+We see that - go to zero uniformly for all $(θi+1,θi−1)$ as Δ → 0. This follows from that all terms with Δ as a denominator are bounded and that $F(θi)−F(θi+1)<2(F(θ)−F(θ′))/n<2Δ/ϵ→0$ and $VΔG(θ)→0$ uniformly (by ).
+
+We are left to show that and go to zero as Δ → 0, which follows once we show that the terms with Δ as a denominator are bounded. We start by evaluating . We get $P(θi;θi−1)$ from the marginal buyer’s indifference: $PΔ(θi;θi−1)=(1−e−rΔ)x(θi−1)θi+e−rΔβ(θi−1,θi)PΔ(θi+1;θi)+e−rΔγ(θi−1,θi)P+,ΔG(θi)$. Now, the price difference in , $PΔ(θi;θi−1)−PΔ(θi+1;θi−1)Δ$, can be written as (B.9) $e−rΔβ(θi−1,θi)−1ΔPΔ(θi+1;θi)+1−e−rΔΔx(θi−1)θi+γ(θi−1,θi)Δe−rΔP+,ΔG(θi)$ (B.10) $+PΔ(θi+1;θi)−PΔ(θi+1;θi−1)Δ.$Notice that is uniformly bounded in the limit as Δ → 0.
+
+The remaining task is to evaluate the price difference $PΔ(θi+1;θi)−PΔ(θi+1;θi−1)$ as it shows up in both remaining terms, and . It equals:$PΔ(θi+1;θi)−PΔ(θi+1;θi−1)=(1−e−rΔ)(x(θi)−x(θi−1))θi+1+e−rΔ(β(θi,θi+1)−β(θi−1,θi+1))PΔ(θi+2;θi+1)+e−rΔ(γ(θi,θi+1)−γ(θi−1,θi+1))P+,ΔG(θi+1).$We can conclude that $PΔ(θi+1;θi)−PΔ(θi+1;θi−1)Δ$ has a uniform bound and hence also and (and hence ) go to zero uniformly as Δ → 0.
+
+Using that $F(θi)−F(θi+1)<2Δ/ϵ$, yields a lower bound $r+x(θi)δG2ϵ−1+(1−x(θi))δB2ϵ−1$ for the coefficient of $VΔN(θ)$ in as Δ → 0: Hence is bounded away from zero as long as $VΔN(θi+1)$ is bounded away from zero. Therefore, we must have $VΔN(θi+1)→0$. We conclude that we can always find a uniform $Δ¯$ such that $VΔN(θ″)=VΔ(θ″,x(θ″))≤ϵ$ for some *θ* ″ ∈ \[*θ* ′, *θ*\] if *t* (*θ* ′; *θ*) > ϵ. □
+
+## Appendix C. Proofs for continuous time limit results in
+
+We first derive and from the equilibrium properties in discrete time, and then use them together with and *V* (*θ*) ≥ 0 to derive properties of the continuous time limit of equilibrium.
+
+**Lemma 8** Sequential sales
+
+*Let δ <sub>B</sub>*  > 0*. In all MPE,* Λ <sub>Δ</sub> (*θ, x* (*θ*))Δ → 0 *as* Δ → 0*.*
+
+**Proof.**Suppose contrary to the claim that there exists *θ* <sub>0</sub> and *θ* <sub>1</sub>  <  *θ* <sub>0</sub> such that for all Δ, there exists a MPE where the monopolist sells at least up to *θ* <sub>1</sub> in state (*θ* <sub>0</sub>, *x* (*θ* <sub>0</sub>)). We show that then the monopolist has a profitable deviation to split sales so that she first sells from *θ* <sub>0</sub> to some $θ^∈(θ1,θ0)$ and then from $θ^$ to *θ* <sub>1</sub>.
+
+Fix a sequence of equilibria such that the purchasing times converge to *t* ( ·;  · ) as Δ → 0. Let $θ˜:=inf{θ:t(θ;θ^)=0}$, and define $θθ^+(θ)$ as the largest type (as a supremum if needed) who purchases in the same period with *θ* and similarly $θθ^−(θ)$ as the smallest type who purchases in the same period with *θ* (or an infimum if needed).
+
+The monopolist’s payoff equals the following when selling up to *θ* <sub>1</sub>:$VΔ(θ0,x(θ0))=(PΔ(θ1;θ0)−c)(F(θ0)−F(θ1))+e−rΔγ(θ0,θ1)VΔ(θ1,1)+e−rΔβ(θ0,θ1)VΔ(θ1,x(θ1)).$If she deviates and first sells up to $θ^$ and then up to *θ* <sub>1</sub>, she gets $V˜Δ(θ0,x(θ0))=(PΔ(θ^;θ0)−c)(F(θ0)−F(θ^))+β(θ0,θ^)(PΔ(θ1;θ^)−c)(F(θ^)−F(θ1))+e−rΔγ(θ0,θ^)VΔ(θ^,1)+e−r2Δβ(θ0,θ^)γ(θ^,θ1)VΔ(θ1,1)+e−r2Δβ(θ0,θ1)VΔ(θ1,x(θ1)).$
+
+Next, we evaluate the difference $VΔ(θ0,x(θ0))−V˜Δ(θ0,x(θ0))$ as Δ → 0:(C.1) $V(θ0,x(θ0))−V˜(θ0,x(θ0))=(P(θ1;θ0)−P(θ^;θ0))(F(θ0)−F(θ^))+(P(θ1;θ0)−β(θ0,θ^)P(θ1;θ^))(F(θ^)−F(θ1))−c(1−β(θ0,θ^))(F(θ^)−F(θ1)).$
+
+To be able to compare the prices under the original scheme and if she deviates, we want to show that $θ˜=inf{θ:t(θ;θ1)=0}$. Suppose instead that $θ˜<inf{θ:t(θ;θ1)=0}$ (an identical argument applies to the other case). As $t(θ;θ^)=0$ for all $θ>θ˜$, but $t(θ;θ^)>0$ for all $θ<θ˜$, $V(θ˜)=0$ by . As the monopolist’s value at $θ^$ cannot be negative, we must have $∫θ˜θ^β(θ^,θθ^+(θ))[P(θθ^−(θ);θθ^+(θ))−c]f(θ)dθ≥0,$where we have used that $VG(θ)=0$ ().
+
+We argue that this implies *V* (*θ* ′) > 0 for all $θ′∈(θ˜,θ^)$. The monopolist can always choose to sell up to $θθ^−(θ′)$ from *θ* ′. Therefore, *V* (*θ* ′) is bounded below by $[P(θθ^−(θ′);θ′)−c](F(θ′)−F(θθ^−(θ′)))+∫θ˜θθ^−(θ′)β(θ′,θθ′+(θ))[P(θθ^−(θ);θθ^+(θ))−c]f(θ)dθ.$
+
+By using that $β(θ′,θ″)=(β(θ‾,θ′))−1β(θ‾,θ″)$ and $P(θθ^−(θ);θθ^+(θ))=γ(θθ^+(θ),θ˜)c+β(θθ^+(θ),θ˜)P˜$ (using and the buyers’ IC), where $P˜$ is the price charged when $θ˜$ purchases absent news,$∫θ˜kβ(k,θθ′+(θ))[P(θθ^−(θ);θθ^+(θ))−c]f(θ)dθ=(β(θ‾,k))−1∫θ˜kβ(θ‾,θθ′+(θ))[γ(θθ^+(θ),θ˜)c+β(θθ^+(θ),θ˜)P˜−c]f(θ)dθ$ Notice that the term inside the square brackets is decreasing in *θ* and that the integrated is independent of the integration bound *k*. Hence, if the integral is weakly positive when the integration bound *k* is $θ^$, the integral must be strictly positive for all $k∈(θ˜,θ^)$. Hence *V* (*θ* ′) > 0 for all $θ′∈(θ˜,θ^)$, contradicting that *t* (*θ* ′; *θ* <sub>1</sub>) > 0 for some $θ′>θ˜$.
+
+Now, we can use that $inf{θ:t(θ;θ1)=0}=inf{θ:t(θ;θ^)=0}=θ˜$ to get:$P(θ1;θ0)=β(θ0,θ˜)P˜+γ(θ0,θ˜)c,$We see that $P(θ1;θ0)−P(θ^;θ0)=0$ in . We also get $P(θ1;θ0)−β(θ0,θ^)P(θ1;θ^)=γ(θ0,θ^)c$.
+
+As $γ(θ0,θ^)<1−β(θ0,θ^)$ whenever *δ <sub>B</sub>*  > 0, $V(θ0,x(θ0))−V˜(θ0,x(θ0)<0$ as $F(θ0)−F(θ^)>0$, contradicting the optimality of the original strategy. Therefore, we conclude that the amount of sales in any period must go to zero as the period length goes to zero. □
+
+If $δB=0$, sequential and atomic sales yield exactly the same purchasing times and monopolist’s and buyers’ value. Therefore, it is without loss of generality to assume sequential sales also in a pure good news environment.
+
+Finally, notice that sequential sales do not rule out bursts of trade in the continuous time limit. Even though the amount of sale sin each period goes to zero as Δ → 0, the rate of sales per a unit of time may go to infinity.
+
+**Buyers’ and the monopolist’s value in the limit**
+
+The schedule of purchasing times pins down the buyer’s value through the envelope theorem:$W(θ;θt,xt)=E[∫θ‾θe−rτ(s)xτ(s)ds|θt,xt].$We can use that implies that all sales happen sequentially rather than exactly at the same time when expanding the value for no-news and after good news paths:(C.2) $W(θ;θt,x(θt))=∫θ‾θe−rt(s;θt)β(θt,s)x(s)ds+∫θ‾θ∫sθte−r(tG(s;z)+t(z;θt))β(θt,z)δGx(z)f(z)dzds,$where we can change the order of integration:$W(θ;θt,x(θt))=∫θ‾θe−rt(s;θt)β(θt,s)x(s)ds+∫θ‾θt∫θ‾min{z,θ}e−r(tG(s;z)+t(z;θt))β(θt,z)δGx(z)f(z)dsdz.$
+
+Then, using that $tG(s;z)=0$ for all *s*  ≥  *c* and $tG(s;z)=∞$ otherwise to gives (C.3) $W(θ;θt,x(θt))=∫θ‾θe−rt(s;θt)β(θt,s)x(s)ds+∫θ‾θte−rt(z;θt)β(θt,z)δGx(z)f(z)(min{z,θ}−c)dz,$where the last term captures the value of good news and where we have used that the monopolist sells to all types above *c* immediately after good news ().
+
+implies that the monopolist’s value is zero after good news in the continuous time limit. Therefore, the seller’s value is equal to the integral over her marginal payoff on the no-news path:(C.4) $V(θt,x(θt))=∫θ‾θte−rt(θ;θt)β(θt,θ)(x(θ)θ−c−W(θ;θ,x(θ)))f(θ)dθ.$
+
+For later use, we also rewrite buyer’s value by using that $β(θt,s)x(s)=xte−δG(F(θt)−F(s))$:(C.5) $W(θ;θt,x(θt))=x(θt)∫θ‾θe−rt(s;θt)−δG(F(θt)−F(s))ds+x(θt)∫θ‾θte−rt(z;θt)−δG(F(θt)−F(z))δGf(z)(min{z,θ}−c)dz.$
+
+Finally, can be written in the terms of the likelihood, $q(θt)=x(θt)/(1−x(θt))$. The likelihood is a simpler process to handle, and we make use of it in the equations. Using the likelihood, the buyer’s value without imposing immediate sales after good news becomes:(C.6) $W(θ;θt,x(θt))=(1−x(θt))∫θ‾θe−rt(s;θt)−δB(F(θt)−F(s))q(s)ds+(1−x(θt))∫θ‾θ∫sθte−r(t(z;θt)+tG(s;z))−δB(F(θt)−F(z))δGq(z)f(z)dzds.$**Proof of**
+
+**Proof.** Let the *marginal joint payoff* per type be defined as $mΔ(θ):=(θ+δGe−rΔVΔG(θ))x(θ)−c$, where the monopolist’s value after good news is $VΔG(θ):=VΔ(θ,1)$.
+
+If the monopolist does not sell to types below *θ*, her marginal payoff equals the marginal joint payoff when *θ* is the highest remaining type. Therefore, the monopolist cannot stop selling in a equilibrium when the marginal joint payoff is positive: the monopolist would have a profitable deviation if the buyers expected her to stop selling. Furthermore, it cannot be optimal to sell to types with negative marginal joint payoff and then to stop selling because the monopolist’s payoff cannot exceed the joint payoff. Otherwise, stopping earlier is a profitable deviation. When Δ → 0, gives that the monopolist’s value after good news goes to zero, $VΔG(θ)→0$, and hence $mΔ(θ)→x(θ)θ−c$. This gives part (i).
+
+To show part (ii), take any *θ* such that $x(θ)θ=c$ and Condition is not satisfied for any *θ* ′ <  *θ*.
+
+Suppose that the monopolist does not stop at *θ* and that the purchasing times after *θ* follow *t* (*s*; *θ*). Then, the monopolist’s value at *θ* is (C.7) $∫θ‾θe−rt(s;θ)β(θ,s)(x(s)s−c−W(s;s,x(s)))f(s)ds,$where *W* (*s*; *s, x* (*s*)) is the limit of *W* <sub>Δ</sub> (*s*; *s, x* (*s*)) in .
+
+To show that the integral in is a strict upper bound for the monopolist’s value, we first argue that the selling scheme *t* (*s*; *θ*) that maximized the monopolist’s value at *θ* is bang-bang: $t(s;θ)=0$ or $t(s;θ)=∞$ for all *s*. Notice that in this maximization we ignore the monopolist’s sequential rationality constraint and hence the analysis here resembles the solution for the commitment monopolist’s problem in . We use results from there whenever suited.
+
+In in , we show that the monopolist’s payoff equals (C.8) $∫θ‾θe−rt(s;θ)β(θ,s)((s+δGΦGE−F(θ)−F(s)f(s))x(s)−c)f(s)ds,$where $ΦGE=∫cs(z−c−F(θ)−F(z)f(z))f(z)dz=−(s−c)(F(θ)−F(s))$ is the monopolist’s virtual value of good news when using that the monopolist sells to all types above *c* immediately. The virtual value is negative because the buyers get all surplus after good news. We see from that the monopolist’s payoff is linear in the discounting term and hence it is maximized by setting $t(s;θ)=0$ for all *s*  ≥  *θ* ′ and $t(s;θ)=∞$ for all *s*  <  *θ* ′ with appropriately chosen *θ* ′.
+
+Next we evaluate the monopolist’s payoff when the purchasing times after *θ* are $t(s;θ)=0$ for all *s*  ≥  *θ* ′ and $t(s;θ)=∞$ for all *s*  <  *θ* ′. Buyer *s* must be strictly worse off if he waits until *θ* ′ purchases:$W(s;s,x(s))>β(s,θ′)(x(θ′)s−P+(θ′))+γ(s,θ′)(s−P+G(θ′)),$where $γ(s,θ′)=x(s)(1−e−δG(F(s)−F(θ′)))$ is the probability of good news and $P+(θ′)$ and $P+G(θ′)$ are the no-news and good news prices when *θ* ′ is the highest remaining type. We have that $P+(θ′)=x(θ′)θ′$ and that $P+G(θ′)<θ′$, which further yields $W(s;s,x(s))>x(s)(s−θ′)$.
+
+By plugging in $t(s;θ)=0$ for all *s*  ≥  *θ* ′ and $t(s;θ)=∞$ for all *s*  <  *θ* ′ and using $W(s;s,x(s))>x(s)(s−θ′)$, we get that the integral in is a strict upper bound for when *θ* ′ is chosen optimally. □
+
+### Proof of
+
+**Proof.**Define an increasing sequence $(θ0(ϵ),θ1(ϵ),⋯,θn(ϵ)(ϵ))$ such that $θ0(ϵ)x(θ0(ϵ))=c+ϵ$ and $F(θi(ϵ))−F(θi−1(ϵ))=ϵ1/(2i)$ for all $i∈{1,⋯,n(ϵ)}$ with *n* (ϵ) such that $θn(ϵ)(ϵ)≤θ^$ with some $θ^∈(θE,θ]$. Hence $t(θ0(ϵ);θ)≥t(θ0(ϵ);θ^)≥∑i=1n(ϵ)t(θi−1(ϵ);θi(ϵ))$. We show that the sum goes to infinity as ϵ → 0 by showing that each $t(θi−1(ϵ);θi(ϵ))$ is bounded away from zero.
+
+As a preliminary step, we argue that there exists $θ^>θ0(ϵ)$ such that an equilibrium price must be weakly above the marginal cost when selling to types smaller than $θ^$. Notice first that the no-news price *P* (*θ*) that is induced by the continuous time limit of an equilibrium using can never jump downward in *θ*, i.e. $P(θ)≥limθ′→(−)θP(θ′)$. This implies that for ϵ small enough, there exists $θ^>θ0(ϵ)$ such that the monopolist’s value is weakly positive for all $k∈[θ^,θ0(ϵ)]$ only if *P* (*θ <sub>i</sub>* (ϵ)) ≥  *c* for all $i∈{1,⋯,n(ϵ)}$. We choose $θ^≤θ$.
+
+As player *θ* ′ can wait time *t* (*θ* ″; *θ* ′) and then purchase, the equilibrium price satisfies $P(θ′)≤(1−e−rt(θ″;θ′))x(θ′)θ′+e−rt(θ″;θ′)(γ(θ′,θ″)+β(θ′,θ″))c+e−rt(θ″;θ′)β(θ′,θ″)(P(θ″)−c).$Using the above and plugging in $θ0(ϵ)x(θ0(ϵ))=ϵ$ and $F(θ1(ϵ))−F(θ0(ϵ))=ϵ$, we get that *P* (*θ* <sub>1</sub> (ϵ)) ≥  *c* only if (C.9) $(1−e−rt(θ0(ϵ);θ1(ϵ)))(x(θ1(ϵ))θ1(ϵ)−c)−e−rt(θ0(ϵ);θ1(ϵ))(1−x(θ1(ϵ)))(1−e−δBϵ)c+e−rt(θ0(ϵ);θ1(ϵ))β(θ1(ϵ),θ0(ϵ))ϵ≥0.$
+
+Next, notice that the term *x* (*θ* <sub>1</sub> (ϵ)) *θ* <sub>1</sub> (ϵ) has an upper bound $x(θ0(ϵ))θ0(ϵ)+(x(θ1(ϵ))−x(θ0(ϵ)))θ0(ϵ)+x(θ1(ϵ))A(F(θ1(ϵ))−F(θ0(ϵ)))$ where $A:=maxθ∈[θ‾,θ‾](f(θ))−1$ captures the maximal rate at which *θ* can change over sales. Now, can hold only if the following holds:$ϵ(1−e−rt(θ0(ϵ);θ1(ϵ))(1−β(θ1(ϵ),θ0(ϵ)))−(1−x(θ1(ϵ)))(1−e−δBϵ)c+(1−e−rt(θ0(ϵ);θ1(ϵ)))((1−x(θ1(ϵ)))(1−e−(δB−δG)ϵ)(ϵ+c)+x(θ1(ϵ))Aϵ)≥0.$Dividing by $ϵ$ and taking the limit as ϵ → 0 gives:$−δB(1−x(θE))c+(1−e−rlimϵ→0t(θ0(ϵ);θ1(ϵ)))((1−x(θE))(δB−δG)c+xθEA)≥0,$which can hold only if lim <sub>ϵ → 0</sub> (*t* (*θ* <sub>0</sub> (ϵ); *θ* <sub>1</sub> (ϵ))) > 0. We conclude that there exists *t* ′ > 0 such that *t* (*θ* <sub>0</sub> (ϵ); *θ* <sub>1</sub> (ϵ)) ≥  *t* ′ for all ϵ.
+
+An identical argument shows that $t(θi−1(ϵ);θi(ϵ))≥t′$ for all ϵ and all *i*  <  *n* (ϵ). Choose *n*  ≥  *K* / *t* ′ and ϵ such that *n*  ≤  *n* (ϵ). Then, we have $t(θ0(ϵ);θ^)≥∑i=1nt(θi−1(ϵ);θi(ϵ))≥nt′≥K$, implying *t* (*θ* <sub>0</sub> (ϵ); *θ*) ≥  *K*. □
+
+### Proof of
+
+**Proof.**The condition $x0θ‾>c$ rules out the no sales equilibrium as otherwise the monopolist would have a profitable deviation to sell as the monopolist captures the entire marginal surplus when the buyers expect that she does not sell.
+
+We show that the necessary conditions and *V* (*θ*) ≥ 0 are inconsistent with immediate sales. More precisely, we show that there exists a uniform bound over all equilibria such that the monopolist’s payoff is negative if she sells faster than the bound allows for between *θ* and $θE+ϵ$. To do that, we apply integration by parts to express the monopolist’s payoff as a function of a purchasing time profile:$Π(T;θt)=∫θ‾θte−rt(θ;θt)β(θt,θ)ϕ(θ;θt)f(θ)dθ,$where *ϕ* (*θ*; *θ <sub>t</sub>*) is the (marginal) no-news virtual surplus defined as $ϕ(θ;θt):=(θ+δGΦGE(θ;θt)−F(θt)−F(θ)f(θ))x(θ)−c,$and $ΦGE(θ;θt)$ is the equilibrium *virtual* payoff of good news arriving when *θ* is the highest type:$ΦGE(θ;θt):=∫cθ(s−c−F(θt)−F(s)f(s))f(s)ds=−(F(θt)−F(θ))(θ−c).$The detailed calculations for how to derive these are in the proof of . The formula for $ΦGE(θ;θt)$ comes from the fact that the monopolist sells immediately up to type *c* if good news arrives in the continuous-time limit of any equilibrium.
+
+Suppose, contrary to the claim, that there exists a sequence of equilibrium purchasing times converging to *t* such that $t(θE+ϵ;θ)<k$. Then, we can find an upper bound on the monopolist’s value by finding a purchasing profile *t* \* that maximizes the monopolist’s payoff $Π(T;θ)$ subject to $t(θE+ϵ;θ)≤k$ and $tG(θ′;θ)=0$ for all *θ* ′ ≥  *c*. For small enough ϵ, such *t* \* takes the following form:$t*(θ′;θ)={0ifθ′≥θ*,kifθ′∈(θE+ϵ,θ*),∞ifθ′<θE+ϵ,$where *θ* \* is chosen such that $ϕ(θ*;θ)=0$ and $∫θ″θ*β(θ,s)ϕ(s;θ)f(s)ds≤0$ for all *θ* ″ <  *θ* \*. Such *θ* \* necessarily exists because we know from the proof of that $Π(T;θ)<0$ if $t(θ′;θ)=0$ for all *θ* ′ ≥  *θ <sub>E</sub>*.
+
+Now, we have a closed form for the upper bound:$V(θ)≤Π(t*;θ)=∫θ*θβ(θ,s)ϕ(s;θ)f(s)ds+e−rk∫θE+ϵθ*β(θ,s)ϕ(s;θ)f(s)ds.$When $ϵ=0$ and $k=0$, the upper bound is negative as then $t*(θ′;θ)=0$ for all *θ* ′ ≥  *θ <sub>E</sub>*. As the upper bound is continuous in *k* and ϵ, this implies that there exists $ϵ¯>0$ and $k¯>0$ such that the upper bound is strictly below zero whenever $ϵ≤ϵ¯$ and $k≤k¯$, contradicting that for all ϵ, *k*  > 0, one can find a sequence of equilibria with limit $t(θE+ϵ;θ)<k$. We conclude that there must exist ϵ > 0 and *k*  > 0 such that $t(θE+ϵ;θ)≥k$ in the continuous-time limit of any equilibrium. □
+
+## Appendix D. Delays in MPE in the continuous time limit
+
+We get the following result from the necessary conditions regarding the shape of delays:
+
+**Proposition 6**
+
+*Suppose δ <sub>B</sub>*  > 0 *and let a purchasing time profile t* ( ·;  · ) *be a continuous time limit of equilibrium with an exit type θ <sub>E</sub> and an induced price profile P. Then, either* $P(θ)=c$ *for all* $θ∈[θE,θ‾]$ *or* $t(·;θ‾)$ *is discontinuous for some θ*  >  *θ <sub>E</sub>.*
+
+**Proof.**First, notice that implies that every state (*θ, x* (*θ*)) is reached on the equilibrium path as Δ → 0 (conditional on no news arrives), which further implies that each remaining type’s price is independent of the history. Therefore, price profile *P* applies both on and off path.
+
+Suppose instead that *P* (*θ*) >  *c* for some $θ∈[θE,θ‾]$ and that $t(·;θ‾)$ is continuous everywhere. The continuity of *t* implies the continuity of *P* by the envelope theorem . Then as *P* (*θ*) >  *c* and $P(θE)=c$, there must exist *θ* ′, *θ* ″ ∈ \[*θ <sub>E</sub>, θ*\] such that *P* (*k*) >  *c* for all *k*  ∈ (*θ* ′, *θ* ″) and *P* is increasing on (*θ* ′, *θ* ″). *P* (*k*) >  *c* implies that *V* (*k*) > 0, which further implies that $t(k;θ′)=0$ by . However, if $t(k;θ′)=0$ for all *k*  ∈ (*θ* ′, *θ* ″), *P* in decreasing on (*θ* ′, *θ* ″), leading to a contradiction.
+
+Finally, *P* (*θ*) <  *c* is possible only if there exists *θ* ′ <  *θ* such that *P* (*θ* ′) >  *c*. As we have already shown that *P* (*θ*) >  *c* is not possible if *t* is continuous, *P* (*θ*) <  *c* is not possible either. □
+
+tells us that the necessary conditions in the continuous time limit allow delays either through marginal cost pricing that causes all buyers to delay purchasing or through quiet periods during which no sales take place. We describe both types of delays with short examples. We highlight that while the sales paths presented here are consistent with the necessary conditions, there is no guarantee that an equilibrium of the exact form exists. All other types of delays are ruled out.
+
+**Marginal cost pricing**. Suppose that the price equals the marginal cost: $P(θ)=c$ and $PG(θ)=c$ for all *θ*. Then the current highest buyer *θ* is indifferent between buying and waiting for time *dt* if $x(θ)θ−c=e−rdt[β(θ,θ−dθ)(x(θ−dθ)θ−c)+x(1−e−δGdQ)(θ−c)],$where *dθ* and *dQ* measure the change in the current highest type and total sales change during *dt*. The first and second terms on the right-hand side are the buyer’s payoff from no news and from good news, respectively, if he waits for *dt*.
+
+Rearranging terms and taking *dt*  → 0 yields:(D.1) $r(x(θ)θ−c)=(1−x(θ))δBcλt,$where *λ <sub>t</sub>* is the endogenous rate of sales. This implicitly determines the no-news purchasing times $t(θ;θ‾)$. Notice that $t(θ;θ‾)$ is necessarily bounded away from zero for all $θ<θ‾$ as the rate of sales *λ <sub>t</sub>* implied by is finite.
+
+**Quiet periods**. Suppose that all buyers up to type $θ′<θ‾$ purchase immediately, i.e. $t(θ;θ‾)=0$ for all *θ*  >  *θ* ′, followed by a quiet period (no sales) of length *d*  > 0 so that $t(θ;θ‾)≥d$ for all *θ*  <  *θ* ′. Suppose further that the rate of sales after the quiet period (type *θ* ′) follows so that the price equals the marginal cost after the quiet period. The length of the quiet period, *d*, is such that the monopolist’s payoff from the initial burst of sales before the quiet period is at least weakly positive.
+
+Notice that without uncertainty, quiet periods are ruled out by the Coase conjecture (). The argument relies on the monopolist making strictly positive profits in discrete time. Under endogenous learning, buyers need to be compensated for the lost opportunity to wait for more information, which reduces the monopolist’s value. Therefore, the complete information lower bound for the monopolist’s value in discrete time does not apply.
+
+## Appendix E. Proofs for
+
+**Proof of**
+
+**Proof.**We plug in the buyers’ value written is terms of the likelihood to simplify the monopolist’s payoff (recall $q=x/(1−x)$):(E.1) $Π(T;θt)1−x(θt)=∫θ‾θte−rt(θ;θt)−δB(F(θt)−F(θ))(θq(θ)−(1+q(θ))c)f(θ)dθ+∫θ‾θte−rt(θ;θt)−δB(F(θt)−F(θ))δGq(θ)ΠG(T;θ)f(θ)dθ−∫θ‾θt∫θ‾θe−rt(θ;θt)−δB(F(θt)−F(s))q(s)f(θ)dsdθ−∫θ‾θt∫θ‾θ∫sθe−r(tG(s;z)+t(z;θt)−δB(F(θt)−F(z))δGq(z)f(z)f(θ)dzdsdθ.$
+
+First, we evaluate the payoff after good news by substituting in *W <sup>G</sup>*:$ΠG(T;θ)=∫θ‾θe−rtG(m;θ)(m−c−∫θ‾me−rtG(s;θ)ds)f(m)dm,$Changing the order of integration in the double integral (Fubini’s theorem) gives $ΠG(T;θ)=∫θ‾θe−rtG(m;θ)(m−c−F(θ)−F(m)f(m))f(m)dm.$
+
+Similarly, using Fubini’s theorem also for the double and the triple integrals in and plugging in Π <sup><em>G</em></sup> gives $Π(T;θt)=(1−xt)∫θ‾θte−rt(θ;θt)−δB(F(θt)−F(θ))×((θ−F(θt)−F(θ)f(θ)+δGΦG(T,θ;θt))q(θ)−(1+q(θ))c)f(θ)dθ,$where we have combined the payoff after good news and the triple integral to get: $ΦG(T,θ;θt):=∫θ‾θe−rtG(s;θ)(s−c−F(θt)−F(s)f(s))f(s)ds$.
+
+The expression in the lemma follows by taking $1+q(θ)$ as a common factor, noting that $q(θ)/(1+q(θ))=x(θ)$ and simplifying the resulting expression. □
+
+Notice that holds for the monopolist’s payoff evaluated at any *θ <sub>t</sub>* on the no-news path. To solve the commitment monopolist’s problem, we are looking for the policy that maximizes the monopolist’s payoff at time zero, that is $Π(T;θ‾)$.
+
+### Proof of
+
+**Proof.** The first part is immediate as $ϕ(T,θ‾;θ‾)=x(θ‾)θ‾−c+x(θ‾)δGΦG*(θ‾;θ‾)$ and $ΦG*(θ‾;θ‾)>0$. We then prove that the commitment monopolist may sell more even when there are sales in the equilibrium. First, use again that the virtual surplus, $ϕ*(θ;θ‾)$, is greater than $x(θ)θ−c=$ for all types greater than some $θp<θ‾$. The claim follows once we show that there exists an initial belief such that i) $x(θ‾)θ‾>c$ (sales in equilibrium) and ii) *θ <sub>E</sub>*  >  *θ <sub>p</sub>* (the commitment monopolist sells to lower types). We first show the existence of an initial belief satisfying both conditions i) and ii) when *x* (*θ*) *θ* is strictly increasing in type. Second, we argue that there exists $δ‾B>δG$ such that *x* (*θ*) *θ* is strictly increasing whenever $δB<δ‾B$.
+
+Let $x^0$ be such that $x^0θ‾=c$ when the initial belief is $x^0$. Condition i) is satisfied for all $x0>x^0$. Assume *x* (*θ*) *θ* is strictly increasing in type. This implies that there is a unique *θ <sub>E</sub>* such that $x(θE)θE=c$. Then, we can choose *θ <sub>E</sub>* to be arbitrarily close to $θ‾$ by choosing a small ϵ > 0 and setting $x0=x^0+ϵ$. We have that *θ <sub>p</sub>* is bounded away from $θ‾$ when $x0=x^0+ϵ$ because $ϕ*(θ‾;θ‾)−x0θ‾−c=δGx0ΦG*(θ‾)>0$ and $ϕ*(θ;θ‾)$ has a bounded derivative in *θ*.
+
+The second step is to observe that *x* (*θ*) *θ* is indeed monotone. The derivative of *x* (*θ*) *θ* equals $x(θ)+θx′(θ)$. As $x′(θ)=(δG−δB)x(θ)(1−x(θ))f(θ)$ and *f* (*θ*) is bounded, there exists $δ‾B>δG$ such that *x* ′(*θ*) is strictly larger than $−x(θ)$ whenever $δB<δ‾B$ and hence *x* (*θ*) *θ* is strictly monotone.□
+
+## Supplementary material
+
+Supplementary material associated with this article can be found in the online version at [10.1016/j.jet.2025.106136](https://doi.org/10.1016/j.jet.2025.106136)
+
+## Appendix F. Supplementary materials
+
+[Download: Download Acrobat PDF file (279KB)](https://ars.els-cdn.com/content/image/1-s2.0-S0022053125001826-mmc1.pdf "Download Acrobat PDF file (279KB)")
+
+Supplementary Data S1. Test.
+
+## Data availability
+
+No data was used for the research described in the article.
+
+## References
+
+The previous version of the paper circulated under the name ‘Social Learning and Monopoly Pricing with Forward Looking Buyers’. We are very grateful to the associate editor and two anonymous referees for their valuable comments. We also thank Dino Gerardi, Bård Harstad, Daniel Hauser, Johannes Hörner, Jan Knoepfle, Klaus Kultti, Konrad Mierendorff, Pauli Murto, Egor Starkov, Peter Norman Sørensen, Juuso Toikka, Juuso Välimäki, Andrey Zhukov and seminar audiences at the AMFEA, Collegio Carlo Alberto and University Carlos III, EARIE, ESWM, Helsinki GSE, NHH, SAET, UCL, University of Copenhagen and University of Oslo. Salmi acknowledges financial support from Emil Aaltonen Foundation, OP Group Research Foundation, Yrjö Jahnsson Foundation, and the ERC grant no. 682417 through PI Vasiliki Skreta.
+
+In the realm of experience goods, plays, musicals or movies often have their runs shortened or cancelled altogether if initial reviews are unfavorable or if the show does not garner enough demand. For example, between 1996–2000 more than half of the shows on Broadway were shown less than 10 times (see ). There are also many notable durable goods which have failed despite high hopes such as Samsung’s Note 7, Apple’s Newton or AT&T’s Picturephone.
+
+For a discussion on commitment power and the Coase conjecture, see (), (), (), () and ().
+
+To interpret this correctly under sequential sales, the discrete time behavior that converges to this continuous time limit has sales in increasingly many periods so that information arrives frequently, but the number of those periods increases at a slower rate than the period length shrinks, causing all sales to take place sequentially over virtual time at real time 0.
+
+*β* (*θ, θ <sub>E</sub>*) equals $x(θ)e−δG(F(θ)−F(θE))+(1−x(θ))e−δB(F(θ)−F(θE))$, and *γ* (*θ, θ <sub>E</sub>*) equals $x(θ)e−δG(F(θ)−F(θE))$.
+
+Notice that we can go between quantities and prices because any schedule of rates of sales, ${λt,λt+1…}$, imply a sequence of highest types and hence a schedule of purchasing times, $T$. and then pin down the price. See also .
+
+Notice that differs from the standard Coase conjecture: it does not imply efficiency or marginal cost pricing.
+
+We flesh out the types of delays allowed by the necessary conditions in .
+
+We thank an anonymous referee for pointing out this interpretation.
+
+An argument analogous to shows that sales take place sequentially in the commitment solution, so that information arrives smoothly between sales.
+
+The characterization is generically unique. Only when the characterization is not unique, there can be an equally good solution with delays.
+
+Uniformly distributed types and pure bad news learning yield such a case.
+
+Notice as well that because buyers are infinitesimally small, a single buyer’s deviation does not affect the aggregate sales.
+
+Our other paper analyzes this type of experimentation in a more general context but without Coasian dynamics.
+
+points out that the models of bargaining under interdependent values and durable goods monopoly under learning-by-doing are equivalent.
+
+obtain a stronger result that the initial price is small compared to residual demand, $F(θ)−F(c)$, which they use to prove a folk theorem for non-stationary equilibria. The weaker version is enough for us.
+
+Notice that periods run in virtual time as $t(θ;θ^)=0$.
+
+Notice that the proof of does not use or its proof, so there is no risk of circular reasoning when using it here.
+
+Recall that we are analyzing the continuous time limit of a discrete time game. A quiet period arises as the limit of a purchasing profile with strictly positive rates of sales in every period that go to zero as Δ → 0. The monopolist’s strategy is Markovian in discrete time and depends on calendar time only in the limit.
+
+
+
+
+---- 
+LLM suggestions
+这份文件主要探讨的是一个**耐用消费品（如戏剧、电影、高科技电子产品）的定价与销售模型**。其核心在于研究当**买卖双方都对产品质量不确定**，且需要通过**实际销售来产生信息（学习）**时，市场表现出的动态博弈。
+
+以下是该模型的核心场景和主要观点：
+
+---
+
+### 1. 核心场景：边卖边学的市场
+
+* 
+**垄断者与买家**：一个垄断卖家向一群潜在买家销售某种质量不明（高或低）的产品 。
+
+
+* 
+**内生学习（Endogenous Learning）**：产品质量不是预先知道的，而是随着销售的进行，通过“新闻”（Signals）逐渐揭示的。卖得越多，产生信号（好消息或坏消息）的概率就越高 。
+
+
+* 
+**前瞻性买家**：买家不笨，他们会根据目前的预期估值和价格决定是现在买，还是等以后出了更多信息、价格更低时再买 。
+
+
+
+### 2. 模型解决的经济学难题
+
+该模型探讨了在“科斯推测”（Coase Conjecture）背景下的新情况。
+
+* **传统科斯推测**：认为垄断者为了尽快卖出商品，会迅速降价，导致由于买家等待降价，垄断者最终只能以边际成本价销售，且销售瞬间完成。
+* 
+**本模型的突破**：加入“学习”机制后，即使垄断者想降价快卖，**销售也会出现低效的延迟（Delays）** 。
+
+
+
+### 3. 为什么会出现“延迟”？（核心发现）
+
+模型指出，**坏消息（Bad News）的存在是导致延迟的主因** ：
+
+* 
+**买家的期权价值**：买家意识到，如果现在不买而是等一等，可能会等到“产品质量极差”的坏消息，从而避免浪费钱。这种“等待”是有价值的（即期权价值） 。
+
+
+* 
+**卖家的无奈**：由于买家想等，卖家必须大幅降价来补偿买家放弃等待的损失。如果卖得太快，产生的坏消息风险太高，卖家甚至会亏本。因此，卖家被迫**放慢销售速度（造成延迟）**，以降低信息流出的速度，从而维持一个高于成本的利润 。
+
+
+
+### 4. 好消息 vs 坏消息的影响
+
+研究发现，不同类型的信息对市场效率的破坏方式不同 ：
+| 信息类型 | 产生后果 | 原因 |
+| :--- | :--- | :--- |
+| **好消息 (Good News)** | **销售量太少** | 卖家无法完全占有“好消息带来的估值提升”，因此缺乏动力通过前期销售来“刷出”好消息 。 |
+| **坏消息 (Bad News)** | **销售速度太慢** | 买家为了规避踩坑风险而选择等待，迫使卖家延缓交易 。 |
+
+### 5. 结论与现实意义
+
+* 
+**社会最优 vs 垄断平衡**：在社会最优的情况下，销售应该立刻发生（不应有延迟），但现实中由于策略博弈，延迟不可避免 。
+
+
+* 
+**承诺的力量**：如果垄断者能承诺不降价（Commitment），情况会好很多。承诺能够消除买家的等待心理，从而实现更快的销售和更高的社会福利 。
+
+
+
+**总结来说：** 这个模型解释了为什么新产品（如新上映的百老汇音乐剧或新科技产品）即使面临降价压力，销售过程也往往很缓慢且容易夭折。这是因为**“等待更多口碑/信息”的价值**让买家变得迟疑，而卖家为了生存不得不战略性地控制销售节奏。
+
+---
+
+**你想深入了解该模型中关于“科斯推测”的具体数学证明，还是想看看它如何应用在具体的行业（如电影票房预测）中？**
+
+----
+
+
+搭建一个多模型自动交流（Brainstorming）的系统，这个模型确实能提供非常深刻的**博弈论视角**，特别是解决“对话何时该停止”以及“如何评估当前讨论价值”的问题。
+
+你可以将你的 Agent 交流过程类比为模型中的**内生学习（Endogenous Learning）**过程：Agent 每一个回合的输出都是在“消耗成本”并“产生信息（质量信号）”。
+
+以下是如何利用该模型原理来优化你系统停止机制（Stopping Rule）的建议：
+
+### 1. 将“信息价值”作为停止的衡量标准
+
+模型指出，社会最优解（Social Optimum）通常是“不延迟”的，即一旦预期收益为正就应立即行动 。
+
+* 
+**应用到 Agent：** 你可以设定一个**虚拟边际成本 $c$** 。当 Agent 讨论产生的“新信息增量”（New Information）低于讨论所需的 Token 成本或时间成本时，系统应停止。
+
+
+* 
+**判定点：** 参考模型中的 `exit type` $\theta_E$，即当所有 Agent 对当前方案的预期估值 $x(\theta) \theta$ 均低于继续讨论的成本 $c$ 时，讨论失去意义 。
+
+
+
+### 2. 识别“好消息”与“坏消息”的信号
+
+模型对两种信号的区分非常适合用于控制讨论流向 ：
+
+* 
+**好消息（Good News）停止：** 如果讨论中出现了一个“决定性”的正面突破（类似于模型中完美揭示高质量的信号），此时应**立即停止讨论并输出结果**，因为进一步讨论只会增加延迟成本而不再改变结论 。
+
+
+* 
+**坏消息（Bad News）延迟：** 模型发现坏消息会导致“低效延迟” 。如果 Agent 们陷入了不断的互相否定（产生坏消息信号），这通常意味着它们在为了规避“踩坑”而等待更多信息 。在这种情况下，系统应干预：要么强制引入新信息，要么直接止损停止。
+
+
+
+### 3. 简化模型为“阶段性最优节点”判定
+
+你可以将复杂的博弈计算简化为以下三个逻辑判定环节：
+
+| 维度 | 简化判定逻辑 (基于模型原理) |
+| --- | --- |
+| **估值评估** | 每个 Agent 对当前结论打分。如果平均分 $\times$ 信心指数 < 预设阈值，视为讨论已达到边际终点 。
+
+ |
+| **信息熵减** | 观察最近 3 个回合的词向量变化。如果变化量极小（无新信号产生），则视为进入了模型描述的“静默期”（Quiet Periods），应强制停止 。
+
+ |
+| **期权价值补偿** | Agent 是否在重复同样的顾虑？如果是，说明它们在等待“期权价值”释放 。此时应判定为“陷入僵局”，不再增加讨论轮次。
+
+ |
+
+### 4. 解决“内生性”导致的无效循环
+
+该模型的一个核心提醒是：**学习是内生的**，即不对话就不会产生新信息 。
+
+* 
+**策略：** 不要让 Agent 无限制地自由交流。你可以引入一个“承诺者”（Commitment Monopolist）角色（如一个 Supervisor Agent），它不参与讨论，但拥有**强制结案权** 。
+
+
+* 
+**效果：** 参考模型结论，拥有“承诺力量”的方案比自由博弈（MPE）更高效，能产生更多的“社会盈余”（即更好的讨论结果）并消除不必要的延迟 。
+
+
+
+### 具体的实现建议：
+
+你可以为你的 Agent 框架增加一个 **"Coasian Monitor" (科斯监听员)** 模块：
+
+1. **量化收益：** 每轮监测总结的质量分提升。
+2. 
+**设定退出阈值：** $x(t) \cdot \theta - c \leq 0$ 。
+
+
+3. **强制收敛：** 一旦检测到讨论进入“坏消息驱动”的反复修正阶段（即补偿价值过高），立即启动“总结并退出”程序。
+
+**你需要我帮你写一个基于 Python 的伪代码逻辑，来实现这种基于“边际成本 vs 预期收益”的停止判定器吗？**
+
+
+---
+
+
+基于这份研究报告的原理，我们可以构建一个 **“内生学习停止器”（Endogenous Learning Stopper）**。在多 Agent 协作场景中，我们将 Agent 的每一轮发言视为一次“销售”，将讨论出的方案质量视为“产品质量” 。
+
+以下是基于 Python 逻辑的简化模型实现：
+
+### 核心逻辑设计
+
+该监控器主要计算 **“继续讨论的期权价值”** 与 **“Token/时间成本”** 之间的博弈 。
+
+```python
+class CoasianStopper:
+    def __init__(self, marginal_cost, decay_rate, threshold_epsilon):
+        [cite_start]self.c = marginal_cost  # 讨论的边际成本（如Token费用/API延迟） [cite: 76]
+        [cite_start]self.r = decay_rate      # 折现率，代表时间紧迫性 [cite: 78]
+        [cite_start]self.epsilon = threshold_epsilon # 最小收益阈值 [cite: 137]
+        self.history = []
+
+    def evaluate_signals(self, response_text):
+        """
+        [cite_start]模拟模型中的学习机制：将Agent输出转化为质量信号 [cite: 80, 82]
+        - [cite_start]Good News (δG): 方案有了突破性进展或达成共识 [cite: 84]
+        - [cite_start]Bad News (δB): 发现漏洞、逻辑错误或陷入死循环 [cite: 85]
+        """
+        # 实际操作中可以使用小模型或正则检测语义一致性
+        delta_G = self._detect_consensus(response_text) 
+        delta_B = self._detect_flaws(response_text)
+        return delta_G, delta_B
+
+    def should_stop(self, current_belief, current_valuation):
+        """
+        [cite_start]根据命题 2 (Proposition 2) 和 定理 1 (Theorem 1) 判定 [cite: 145, 164]
+        """
+        # [cite_start]1. 检查预期价值是否低于边际成本 [cite: 96]
+        # x(θ) * θ <= c
+        expected_surplus = current_belief * current_valuation 
+        
+        if expected_surplus <= self.c:
+            return True, "Exit Condition Met: Marginal surplus is zero."
+
+        # [cite_start]2. 检查是否存在“坏消息”导致的无效延迟 [cite: 107, 189]
+        # 如果连续多轮出现 Bad News 信号，说明进入了低效的“期权等待期”
+        if self._is_inefficient_delay():
+            return True, "Strategic Delay Detected: Too much 'Bad News' compensation needed."
+
+        # [cite_start]3. 检查信息增量是否进入“静默期” (Quiet Periods) [cite: 380]
+        if self._in_quiet_period():
+            return True, "Quiet Period: No new information generated through sales (chat)."
+
+        return False, "Continue Brainstorming"
+
+    def _is_inefficient_delay(self):
+        # [cite_start]对应定理 1：坏消息学习环境下，Agent为了避错会不断推迟结论 [cite: 168, 248]
+        # 如果最近 N 轮讨论没有带来实质性的预期价值提升，则判定为低效延迟
+        pass
+
+```
+
+---
+
+### 我们可以从模型中借用的三个关键策略：
+
+1. **“退出类型”判定 (The Exit Type $\theta_E$)**
+* 
+**原理**：当 Agent 们通过讨论发现，目前最好的方案在考虑了错误风险后的“预期价值”，已经抵不上再讨论一轮所需的算力成本时，就应该停止 。
+
+
+* 
+**应用**：给你的 Stopper 设定一个硬性的“信息单价”，一旦方案分数的增长率低于这个单价，立即掐断 。
+
+
+
+
+2. **强制“好消息”结案 (Immediate Sales after Good News)**
+* 
+**原理**：模型证明，在社会最优解中，一旦出现好消息，所有交易应立即完成 。
+
+
+* 
+**应用**：如果检测到 Agent 之间达成了高度语义一致（即 Good News 信号出现），不要让它们继续客套（例如“我非常同意你的看法，补充一点...”），Stopper 应直接判定阶段性最优节点已到，强制输出 。
+
+
+
+
+3. **识别“坏消息”陷阱 (Bad News Environment)**
+* 
+**原理**：坏消息学习会导致讨论变得极度缓慢，因为 Agent 害怕犯错而产生的“等待价值”太高 。
+
+
+* 
+**应用**：如果 Agent 开始陷入“找茬轮次”（即不断产生负面反馈信号 $\delta_B$），根据定理 1，这种延迟是低效的 。此时不应等待共识，而应由 Stopper 介入，要么切换讨论主题，要么直接按当前最优版本结案 。
+
+
+
+
+
+### 下一步建议：
+
+你想让我针对 **LangGraph** 或 **AutoGen** 等具体的框架，把这个 **Coasian Stopper** 写成一个可插拔的 Middleware（中间件）逻辑吗？
+
+----
+
+
+基于《科斯动态与内生学习》（Coasian dynamics and endogenous learning）的研究逻辑 ，我们可以为多 Agent 讨论系统设计一个**“阶段性最优停止判定器”**。
+
+该模型的核心逻辑在于：**讨论（销售）会产生信息，但由于买家（其他 Agent）具有等待更好信息的期权价值，导致讨论会出现低效的延迟** 。
+
+以下是为您设计的 Python 伪代码，模拟了模型中的**内生学习停止逻辑**：
+
+### 核心判定算法实现
+
+```python
+import math
+
+class CoasianAgentStopper:
+    def __init__(self, c=0.1, r=0.05, delta_B=0.5):
+        [cite_start]self.c = c              # 边际成本 (Marginal Cost): 讨论每轮消耗的Token/时间 [cite: 76]
+        [cite_start]self.r = r              # 折现率 (Discount Rate): 时间紧迫感 [cite: 78]
+        [cite_start]self.delta_B = delta_B  # 坏消息到达率: 发现方案漏洞的概率 [cite: 85]
+        [cite_start]self.belief_x = 0.5     # 初始信念: 认为当前讨论方向是“高质量”的概率 [cite: 72]
+        [cite_start]self.current_theta = 1.0 # 最高类型估值: 当前最乐观 Agent 对方案的评价 [cite: 122]
+
+    def update_belief(self, delta_G_signal, delta_B_signal):
+        """
+        [cite_start]根据 Bayes 法则更新信念 [cite: 86]
+        [cite_start]当没有新突破(信号)时，信念随讨论轮次(Q)动态演化 [cite: 87]
+        """
+        # [cite_start]在坏消息环境下，如果没有坏消息出现，信念会随讨论增加而上升 [cite: 88]
+        if not delta_B_signal:
+            # 简化版信念更新：表示“尚未发现致命错误”带来的信心提升
+            self.belief_x = self.belief_x / (self.belief_x + (1 - self.belief_x) * math.exp(-self.delta_B))
+
+    def calculate_option_value_of_waiting(self):
+        """
+        [cite_start]计算等待的期权价值 (Option Value of Waiting) [cite: 108, 237]
+        [cite_start]买家(Agent)为了避免做出错误决定(坏消息到达)而倾向于等待 [cite: 31, 169]
+        """
+        # [cite_start]模型指出：坏消息能让买家避免在低质量时购买 [cite: 30, 248]
+        # [cite_start]期权价值随坏消息到达率 delta_B 增加 [cite: 107, 108]
+        return (1 - self.belief_x) * self.delta_B * self.c 
+
+    def should_stop_brainstorming(self, agent_feedback_score):
+        """
+        判定是否达到阶段性最优停止点
+        """
+        # [cite_start]1. 退出条件判定 (Exit Type Condition) [cite: 96, 145]
+        # [cite_start]当预期估值 x(θ) * θ 等于边际成本 c 时，应停止 [cite: 98, 145]
+        expected_valuation = self.belief_x * agent_feedback_score
+        
+        # [cite_start]2. 检查是否存在低效延迟 (Inefficient Delays) [cite: 11, 22, 53]
+        # [cite_start]如果当前价格(收益)无法覆盖买家的期权价值补偿，垄断者(系统)应强制停止 [cite: 32, 238]
+        compensation_needed = self.calculate_option_value_of_waiting()
+        
+        # 逻辑判断：如果预期收益减去成本，还不足以补偿等待带来的期权价值
+        if expected_valuation <= self.c + compensation_needed:
+            # [cite_start]对应定理 1：在坏消息存在时，会出现统一的延迟界限 [cite: 164, 167]
+            return True, "Reached Coasian Exit Point: Marginal surplus cannot cover waiting option."
+
+        # [cite_start]3. 好消息判定: 如果出现完美揭示信号，立即停止并输出 (Socially Optimal) [cite: 185]
+        [cite_start]if agent_feedback_score > 0.95:  # 模拟“好消息”到达 [cite: 84, 191]
+            return True, "Good News Received: Immediate output is socially optimal."
+
+        return False, "Keep Discussing"
+
+```
+
+---
+
+### 如何简化该模型用于您的 Agent 系统？
+
+为了让多个 Agent 自动交流且不陷入“低效讨论陷阱”，您可以直接应用以下三个简化原则：
+
+1. **设定“退出估值” ($\theta_E$)：**
+* 
+**原则：** 不要等 Agent 们完全没话说了才停止 。
+
+
+* 
+**做法：** 设定一个阈值 $x(\theta)\theta = c$ 。当最新的几轮对话中，Agent 对方案的评分（预期价值）提升量小于单轮 Token 成本时，判定为达到了“科斯退出点”，强制结案 。
+
+
+
+
+2. **补偿“坏消息”焦虑：**
+* 
+**原则：** Agent 迟迟不肯结案通常是因为害怕方案有错（坏消息焦虑），这会导致无意义的反复修正 。
+
+
+* 
+**做法：** 监测讨论中的“找茬”频率。如果 Agent 开始频繁提出微小漏洞（Bad News 环境） ，系统应意识到由于期权价值的存在，它们永远无法自发达成共识 。此时应启用“承诺者（Commitment）”模式，直接切断讨论并取当前最优解 。
+
+
+
+
+3. **好消息立即结案原则：**
+* 
+**原则：** 在社会最优方案中，一旦核心问题解决（好消息），所有讨论应立即结束 。
+
+
+* 
+**做法：** 如果某一轮出现了被多数 Agent 认可的“突破性逻辑”，不要让它们继续进行礼貌性的互动，直接判定为阶段性最优节点 。
+
+
+
+
+
+### 总结
+
+该模型告诉我们：**由于 Agent 们总是想“再等一轮看看有没有错”，自发的讨论往往会太慢且效率太低** 。作为系统设计者，您扮演的是具有“承诺力量（Commitment Power）”的管理者 ，您的职责是在 Agent 们由于期权价值而陷入徘徊时，通过计算边际收益与成本的平衡点，果断结案 。
+
+**您是否需要我针对特定的 Agent 框架（如 AutoGen 或 LangGraph），提供具体的拦截器（Interceptor）代码实现？**
+
+
+----
+既然您需要具体的代码实现，我将以 **LangGraph** 为例为您编写一个**科斯拦截器（Coasian Interceptor）**。
+
+在 LangGraph 中，我们可以利用 `Conditional Edges` 或 `Node` 内部逻辑来嵌入这个模型。该拦截器的核心是监控讨论的“边际增量”，并计算是否存在由于“坏消息焦虑”导致的低效延迟 。
+
+### 核心实现逻辑
+
+我们将讨论过程抽象为：
+
+1. 
+**内生学习**：每轮对话更新方案的预期价值 。
+
+
+2. 
+**期权价值计算**：计算 Agent 因为担心方案错误而选择“继续改”的心理成本 。
+
+
+3. 
+**强制退出**：当预期收益无法覆盖“讨论成本 + 焦虑补偿”时，由“具有承诺能力的垄断者（系统）”结案 。
+
+
+
+```python
+import math
+from typing import TypedDict, List
+
+# 定义讨论状态
+class BrainstormState(TypedDict):
+    messages: List[str]
+    scores: List[float] # 每轮 Agent 对方案的质量评分
+    current_belief: float # 对当前方向正确性的信心度 x_t
+    stop_signal: bool
+
+class CoasianInterceptor:
+    def __init__(self, marginal_cost=0.05, delta_B=0.3):
+        self.c = marginal_cost  # 每轮讨论的 Token 成本
+        [cite_start]self.delta_B = delta_B  # 坏消息到达率：发现漏洞的概率 [cite: 85]
+        
+    def _calculate_waiting_option(self, belief_x):
+        """
+        [cite_start]计算买家（Agent）的等待期权价值 [cite: 108]
+        [cite_start]公式简化自模型：当 delta_B > 0 时，买家有动力等待坏消息以避免错误决策 [cite: 31]
+        """
+        # [cite_start]坏消息风险越高，买家越想等，期权价值越高 [cite: 169]
+        return (1 - belief_x) * self.delta_B * self.c
+
+    def __call__(self, state: BrainstormState):
+        messages = state["messages"]
+        scores = state["scores"]
+        belief = state["current_belief"]
+        
+        if not scores:
+            return {"stop_signal": False}
+
+        # [cite_start]1. 更新内生信念 (Endogenous Learning) [cite: 4, 81]
+        # [cite_start]如果没有显著报错，信心随讨论轮数微增 [cite: 88]
+        new_belief = belief / (belief + (1 - belief) * math.exp(-self.delta_B))
+        
+        # [cite_start]2. 计算当前预期价值 x(θ) * θ [cite: 96]
+        current_score = scores[-1]
+        expected_valuation = new_belief * current_score
+        
+        # [cite_start]3. 计算期权价值补偿 (Option Value Compensation) [cite: 238]
+        # [cite_start]只要存在坏消息可能，卖家就需要通过降价或延迟来补偿买家 [cite: 249]
+        option_value = self._calculate_waiting_option(new_belief)
+        
+        # [cite_start]4. 判定阶段性最优节点 (Exit Condition) [cite: 145]
+        # [cite_start]如果预期收益 <= 边际成本 + 焦虑补偿，则停止讨论 [cite: 107]
+        # [cite_start]这能防止模型提到的“由于坏消息导致的低效延迟” [cite: 248]
+        if expected_valuation <= (self.c + option_value):
+            print(f"--- 触发科斯退出点 ---")
+            print(f"预期收益: {expected_valuation:.4f}, 总成本补偿: {self.c + option_value:.4f}")
+            return {"stop_signal": True, "current_belief": new_belief}
+            
+        # [cite_start]5. 好消息判定 (Good News Logic) [cite: 150]
+        # [cite_start]如果某一轮评分大幅提升，判定为“好消息”，直接进入社会最优出口 [cite: 185]
+        if len(scores) > 1 and (scores[-1] - scores[-2] > 0.4):
+            print("--- 检测到好消息：达成突破性共识 ---")
+            return {"stop_signal": True, "current_belief": 1.0}
+
+        return {"stop_signal": False, "current_belief": new_belief}
+
+# 在 LangGraph 中的路由函数
+def router(state: BrainstormState):
+    if state["stop_signal"]:
+        return "summarize_and_exit"
+    return "next_agent_discussion"
+
+```
+
+### 为什么这样能找到“阶段性最优节点”？
+
+1. 
+**克服“延迟非平凡性”**：模型指出，坏消息环境下单纯延迟一轮是不够的 。该拦截器通过计算 `option_value` 识别出 Agent 是否在为了避错而进行“战术性扯皮”。
+
+
+2. 
+**模拟“承诺力量”**：在平衡状态下，垄断者必须留出盈余给买家 。拦截器强制在收益递减点结案，模拟了“承诺垄断者”不降价、不等待的行为，从而消除低效延迟 。
+
+
+3. 
+**解决“内生性”僵局**：因为学习是内生的（不说话就没信息），拦截器通过监测评分增量判定信息流是否已经衰减到“静默期” 。
+
+
+
+### 建议集成步骤：
+
+* **评分 Agent**：在每轮讨论后，增加一个轻量级节点，让一个中立 Agent 对当前方案打分（0-1）。
+* **参数微调**：
+* 如果您的 Agent 喜欢“抬杠”，请调高 `delta_B`（坏消息率）。
+* 如果您希望讨论尽早结束，请调高 `c`（边际成本）。
+
+
+
+您想针对这个逻辑，进一步探讨如何将“好消息”与“坏消息”的到达率进行更精确的语义量化吗？

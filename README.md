@@ -1,13 +1,17 @@
-# Orchestrator Skeleton (Task 1)
+# Orchestrator Skeleton (Task 1 + Task 2 foundation)
 
-This repository now contains a runnable Node + TypeScript skeleton with:
+This repository contains a runnable Node + TypeScript skeleton with:
 
 - Modular folders for adapters/api/orchestrator/policies/storage/schemas/config
-- Core types (`LLMRequest`, `LLMResponse`, `Phase`, `StopReasonCode`, `DecisionTrace`)
-- Initial phase-gate state machine
-- Initial economic stop policy
-- Fastify demo server (`/health`, `/demo-stop`)
-- Vitest unit test for phase transitions
+- Core domain types (`LLMRequest`, `LLMResponse`, `Phase`, `StopReasonCode`, `DecisionTrace`)
+- Phase-gate state machine with rollback support
+- Economic stop policy (economic gate + readiness gate)
+- Simulation runner for replayable phase transitions and stop decisions
+- Fastify endpoints:
+  - `GET /health`
+  - `GET /demo-stop`
+  - `POST /runs/simulate`
+- Vitest unit tests for state transitions, stop policy, and simulation behavior
 
 ## Run
 

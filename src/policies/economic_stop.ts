@@ -1,4 +1,4 @@
-import type { DecisionTrace } from '../types/core';
+import type { DecisionTrace, StopReasonCode } from '../types/core';
 
 export interface StopInput {
   expectedDeltaValue: number;
@@ -10,7 +10,11 @@ export interface StopInput {
   budgetExceeded?: boolean;
 }
 
-export function evaluateStop(input: StopInput): { continue: boolean; reason: string; trace: DecisionTrace } {
+export type StopDecision =
+  | { continue: true; reason: 'continue'; trace: DecisionTrace }
+  | { continue: false; reason: StopReasonCode; trace: DecisionTrace };
+
+export function evaluateStop(input: StopInput): StopDecision {
   const economicGatePass = input.expectedDeltaValue > input.expectedDeltaCost + input.opportunityCost;
   const readinessGatePass = input.readinessScore >= input.readinessThreshold && input.blockerCount === 0;
 

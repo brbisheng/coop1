@@ -8,12 +8,32 @@ export type Event =
   | 'contradiction_found'
   | 'stop';
 
+const transitions: Record<Phase, Partial<Record<Event, Phase>>> = {
+  framing: { framing_ok: 'synthesis', stop: 'stopped' },
+  synthesis: { synthesis_ok: 'verification', stop: 'stopped' },
+  verification: { verification_ok: 'readiness', contradiction_found: 'synthesis', stop: 'stopped' },
+  readiness: { readiness_ok: 'stopped', stop: 'stopped' },
+  stopped: {},
+};
+
+export interface TransitionResult {
+  from: Phase;
+  event: Event;
+  to: Phase;
+  changed: boolean;
+}
+
 export function nextPhase(current: Phase, event: Event): Phase {
-  if (current === 'framing' && event === 'framing_ok') return 'synthesis';
-  if (current === 'synthesis' && event === 'synthesis_ok') return 'verification';
-  if (current === 'verification' && event === 'verification_ok') return 'readiness';
-  if (current === 'verification' && event === 'contradiction_found') return 'synthesis';
-  if (current === 'readiness' && event === 'readiness_ok') return 'stopped';
-  if (event === 'stop') return 'stopped';
-  return current;
+  const candidate = transitions[current][event];
+  return candidate ?? current;
+}
+
+export function transition(current: Phase, event: Event): TransitionResult {
+  const to = nextPhase(current, event);
+  return {
+    from: current,
+    event,
+    to,
+    changed: to !== current,
+  };
 }
